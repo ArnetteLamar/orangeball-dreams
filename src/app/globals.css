@@ -1606,32 +1606,28 @@ button,
    MOBILE NAVBAR FIX
 ========================================================= */
 
-.navbar-agency::after {
-  display: block;
-  top: 66px;
-  height: 6px;
-  z-index: 0;
-}
+@media (max-width: 991px) {
+  .navbar-agency {
+    min-height: 102px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+  }
 
-.navbar-agency .container {
-  position: relative;
-  z-index: 1;
-}
+  .navbar-agency::after {
+    display: block;
+    top: 62px;
+    height: 3px;
+    z-index: 0;
+  }
+
+  .navbar-agency .container {
+    position: relative;
+    z-index: 1;
+  }
 
   .brand-logo {
     height: 92px;
     width: auto;
-  }
-  
-   .icon-btn {
-    width: 34px;
-    height: 34px;
-    padding: 0;
-  }
-
-  .lang-pill {
-    padding: 5px 8px;
-    font-size: 0.72rem;
   }
 
   .brand-text {
@@ -1664,10 +1660,6 @@ button,
     background: rgba(255, 122, 24, 0.1);
   }
 
-  .orangeball-nav-dropdown {
-    position: relative;
-  }
-
   .orangeball-nav-menu {
     position: static;
     display: grid;
@@ -1690,9 +1682,18 @@ button,
     width: 100%;
     margin-top: 8px;
   }
-
+}
 
 @media (max-width: 576px) {
+  .navbar-agency {
+    min-height: 88px;
+  }
+
+  .navbar-agency::after {
+    top: 54px;
+    height: 3px;
+  }
+
   .brand-logo {
     height: 78px;
   }
