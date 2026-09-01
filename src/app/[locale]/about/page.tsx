@@ -85,7 +85,7 @@ export default function AboutPage() {
                 style={{ maxWidth: "320px" }}
               >
                 <Image
-                  src="/img/about/miguelsa.jpeg"
+                  src="/img/about/miguel-sa.jpeg"
                   alt="Miguel Sá"
                   width={500}
                   height={700}
@@ -193,3 +193,4 @@ export default function AboutPage() {
     </>
   );
 }
+
