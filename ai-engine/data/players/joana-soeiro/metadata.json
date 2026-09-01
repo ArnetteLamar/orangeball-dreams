@@ -1,0 +1,10 @@
+{
+  "schema_version": "1.0",
+  "slug": "joana-soeiro",
+  "created_at": "2026-07-03T10:46:13.915482+00:00",
+  "source": "normalize_players.py",
+  "generated": false,
+  "notes": "",
+  "updated_at": "2026-07-03T10:46:13.915482+00:00",
+  "last_normalized_by": "normalize_players.py"
+}

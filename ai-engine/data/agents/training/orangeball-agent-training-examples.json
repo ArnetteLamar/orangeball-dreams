@@ -1,0 +1,160 @@
+{
+  "schema_version": "1.0",
+  "training_pack_id": "orangeball-agent-training-pack",
+  "agent_id": "orangeball-scouting-agent",
+  "purpose": "Ensinar o agente a transformar informação externa em propostas estruturadas para aprovação humana.",
+  "golden_rules": [
+    "Nunca publicar diretamente no site.",
+    "Nunca alterar dados de atletas sem aprovação humana.",
+    "Criar sempre uma proposta pendente.",
+    "Incluir sempre player_slug, source_id, source_url e confidence.",
+    "Ignorar dados quando a confiança for baixa.",
+    "Nunca inventar estatísticas, clubes, notícias ou biografias.",
+    "Quando houver dúvida, criar nota para revisão humana em vez de assumir."
+  ],
+  "minimum_confidence_for_proposal": 0.75,
+  "good_examples": [
+    {
+      "example_id": "stat_update_good_001",
+      "input_context": {
+        "player_slug": "joana-soeiro",
+        "source_id": "fpb",
+        "source_url": "https://example.com/fpb/game/123",
+        "raw_text": "Joana Soeiro terminou o jogo frente ao Sporting com 12 pontos, 4 ressaltos, 7 assistências, 2 roubos de bola e 31 minutos jogados."
+      },
+      "expected_output": {
+        "proposal_type": "stat_update",
+        "player_slug": "joana-soeiro",
+        "source_id": "fpb",
+        "source_url": "https://example.com/fpb/game/123",
+        "confidence": 0.92,
+        "data": {
+          "competition": "Liga Betclic",
+          "season": "2026/27",
+          "round": "Jornada 10",
+          "opponent": "Sporting",
+          "points": 12,
+          "rebounds": 4,
+          "assists": 7,
+          "steals": 2,
+          "blocks": 0,
+          "minutes": 31
+        },
+        "agent_notes": "Estatísticas encontradas na fonte configurada. Aguardam aprovação humana."
+      }
+    },
+    {
+      "example_id": "news_update_good_001",
+      "input_context": {
+        "player_slug": "joana-soeiro",
+        "source_id": "club_site",
+        "source_url": "https://example.com/news/joana-performance",
+        "raw_text": "Joana Soeiro esteve em destaque na vitória da equipa, assumindo um papel decisivo na organização ofensiva."
+      },
+      "expected_output": {
+        "proposal_type": "news_update",
+        "player_slug": "joana-soeiro",
+        "source_id": "club_site",
+        "source_url": "https://example.com/news/joana-performance",
+        "confidence": 0.84,
+        "data": {
+          "title": "Joana Soeiro em destaque na vitória da equipa",
+          "summary": "Joana Soeiro foi destacada pela sua influência na organização ofensiva e pelo impacto na vitória da equipa.",
+          "published_at": "",
+          "category": "performance"
+        },
+        "agent_notes": "Notícia encontrada numa fonte configurada. Aguardam aprovação humana."
+      }
+    },
+    {
+      "example_id": "profile_update_good_001",
+      "input_context": {
+        "player_slug": "joana-soeiro",
+        "source_id": "club_site",
+        "source_url": "https://example.com/team/joana-soeiro",
+        "raw_text": "Joana Soeiro é base e representa o clube XPTO na Liga Betclic."
+      },
+      "expected_output": {
+        "proposal_type": "profile_update",
+        "player_slug": "joana-soeiro",
+        "source_id": "club_site",
+        "source_url": "https://example.com/team/joana-soeiro",
+        "confidence": 0.8,
+        "data": {
+          "club": "XPTO",
+          "league": "Liga Betclic",
+          "position": "Base",
+          "height": "",
+          "nationality": "",
+          "bio": ""
+        },
+        "agent_notes": "Possível atualização de perfil encontrada. Campos vazios não devem substituir dados existentes sem revisão."
+      }
+    }
+  ],
+  "bad_examples": [
+    {
+      "example_id": "bad_publish_directly_001",
+      "mistake": "O agente tenta publicar diretamente no site.",
+      "bad_output": {
+        "action": "publish_to_website",
+        "player_slug": "joana-soeiro",
+        "data": {
+          "points": 20
+        }
+      },
+      "correct_behavior": "Criar apenas uma proposta pendente para aprovação humana."
+    },
+    {
+      "example_id": "bad_missing_source_001",
+      "mistake": "O agente cria proposta sem source_url.",
+      "bad_output": {
+        "proposal_type": "stat_update",
+        "player_slug": "joana-soeiro",
+        "source_id": "fpb",
+        "confidence": 0.9,
+        "data": {
+          "points": 12
+        }
+      },
+      "correct_behavior": "A proposta deve incluir source_url ou explicar claramente que a fonte foi manual/admin."
+    },
+    {
+      "example_id": "bad_low_confidence_001",
+      "mistake": "O agente cria proposta com confiança baixa.",
+      "bad_output": {
+        "proposal_type": "news_update",
+        "player_slug": "joana-soeiro",
+        "source_id": "club_site",
+        "source_url": "https://example.com/news/unknown",
+        "confidence": 0.42,
+        "data": {
+          "title": "Possível notícia",
+          "summary": "Resumo incerto."
+        }
+      },
+      "correct_behavior": "Ignorar ou criar nota interna para revisão, mas não criar proposta automática."
+    },
+    {
+      "example_id": "bad_invented_stats_001",
+      "mistake": "O agente inventa estatísticas que não estavam na fonte.",
+      "bad_output": {
+        "proposal_type": "stat_update",
+        "player_slug": "joana-soeiro",
+        "source_id": "fpb",
+        "source_url": "https://example.com/game",
+        "confidence": 0.91,
+        "data": {
+          "points": 18,
+          "rebounds": 7,
+          "assists": 10,
+          "steals": 3,
+          "blocks": 1,
+          "minutes": 35
+        }
+      },
+      "correct_behavior": "Usar apenas estatísticas presentes na fonte. Dados ausentes devem ficar a 0 ou vazios conforme o contrato."
+    }
+  ],
+  "agent_output_rule": "A resposta final do agente deve ser sempre JSON válido, sem texto antes ou depois."
+}

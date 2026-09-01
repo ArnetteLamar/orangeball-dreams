@@ -1,0 +1,33 @@
+{
+  "proposal_id": "proposal-agent-20260825154750-ue60m6",
+  "type": "profile_update",
+  "source": "orangeball_agent",
+  "source_url": "https://example.com/profile/test-001",
+  "confidence": 0.9,
+  "status": "approved",
+  "created_at": "2026-08-25T15:47:50.589Z",
+  "notes": "Teste de profile_update criado manualmente através do Admin.",
+  "proposed_data": {
+    "club": "SL Benfica",
+    "position": "Base",
+    "gender": "female",
+    "league": "Liga Betclic Feminina",
+    "bio": "Joana Soeiro é uma base portuguesa com experiência ao mais alto nível nacional.",
+    "agent_notes": "Perfil atualizado com informação de teste recolhida pelo Orangeball Scouting Agent."
+  },
+  "audit": {
+    "created_by": "orangeball-scouting-agent",
+    "raw_source_file": "ai-engine\\data\\sources\\raw\\joana-soeiro-orangeball_agent-agent-20260825154750.json"
+  },
+  "reviewed_at": "2026-08-25T16:26:18.623Z",
+  "reviewed_by": "arnette",
+  "approved_profile_file": "ai-engine\\data\\players\\joana-soeiro\\profile.json",
+  "applied_profile_fields": [
+    "club",
+    "position",
+    "gender",
+    "league",
+    "bio",
+    "agent_notes"
+  ]
+}

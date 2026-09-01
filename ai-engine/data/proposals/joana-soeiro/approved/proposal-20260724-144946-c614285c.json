@@ -1,0 +1,25 @@
+{
+  "proposal_id": "proposal-20260724-144946-c614285c",
+  "type": "add_game",
+  "player_slug": "joana-soeiro",
+  "source": "admin_test",
+  "confidence": 0.87,
+  "status": "approved",
+  "created_at": "2026-07-24T14:49:46.002151+00:00",
+  "reviewed_at": "2026-07-24T14:51:27.216873+00:00",
+  "reviewed_by": "arnette",
+  "notes": "Proposta de teste criada diretamente no Admin.",
+  "proposed_data": {
+    "competition": "Liga Betclic",
+    "season": "2026/27",
+    "round": "Jornada Teste",
+    "opponent": "GDessa",
+    "points": 111,
+    "rebounds": 4,
+    "assists": 6,
+    "steals": 2,
+    "blocks": 0,
+    "minutes": 30
+  },
+  "updated_at": "2026-07-24T14:51:19.579Z"
+}

@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.0",
+  "sources": [
+    {
+      "source_id": "fpb",
+      "name": "Federação Portuguesa de Basquetebol",
+      "type": "official_stats",
+      "country": "Portugal",
+      "status": "planned",
+      "trust_level": "high",
+      "notes": "Fonte principal para jogos, boxscores e estatísticas nacionais em Portugal."
+    },
+    {
+      "source_id": "feb",
+      "name": "Federación Española de Baloncesto",
+      "type": "official_stats",
+      "country": "Spain",
+      "status": "planned",
+      "trust_level": "high",
+      "notes": "Fonte principal para jogos, boxscores e estatísticas nacionais em Espanha."
+    },
+    {
+      "source_id": "club_site",
+      "name": "Club official website",
+      "type": "club_news",
+      "country": "multiple",
+      "status": "planned",
+      "trust_level": "medium",
+      "notes": "Pode conter notícias, convocatórias, resumos e comunicados oficiais dos clubes."
+    },
+    {
+      "source_id": "manual_admin",
+      "name": "Manual Admin Entry",
+      "type": "manual_validation",
+      "country": "multiple",
+      "status": "active",
+      "trust_level": "verified_by_admin",
+      "notes": "Dados introduzidos ou validados manualmente no Admin."
+    }
+  ]
+}

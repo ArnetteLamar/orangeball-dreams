@@ -1,0 +1,43 @@
+{
+  "name": "orange-ball-dreams",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "obd:generate": "python ai-engine/generate_all.py",
+    "obd:players": "python ai-engine/generate_player.py",
+    "obd:reports": "python ai-engine/main.py",
+    "obd:create-player": "python ai-engine/actions/create_player.py",
+    "obd:update-player": "python ai-engine/actions/update_player.py",
+    "obd:health": "python ai-engine/health_check.py",
+    "obd:normalize": "python ai-engine/actions/normalize_players.py",
+    "obd:sources": "python ai-engine/actions/process_source_folder.py",
+    "obd:source-profiles": "python ai-engine/actions/validate_source_profiles.py",
+    "obd:source-readiness": "python ai-engine/actions/check_source_readiness.py",
+    "obd:create-raw": "python ai-engine/actions/create_raw_from_ready_sources.py",
+    "obd:update-raw": "python ai-engine/actions/update_raw_placeholder.py",
+    "obd:agent-training": "python ai-engine/actions/validate_agent_training.py",
+    "obd:agent-output": "python ai-engine/actions/validate_agent_output.py",
+    "obd:agent-process": "python ai-engine/actions/process_agent_output.py",
+    "obd:agent-input": "python ai-engine/actions/validate_agent_input.py",
+    "obd:agent-run-packet": "python ai-engine/actions/create_agent_run_packet.py"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "bootstrap-icons": "^1.11.3",
+    "next": "^14.2.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.30",
+    "@types/react": "^18.2.66",
+    "@types/react-dom": "^18.2.22",
+    "eslint": "^8.57.0",
+    "eslint-config-next": "^14.2.0",
+    "typescript": "^5.4.5"
+  }
+}

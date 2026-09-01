@@ -1,0 +1,151 @@
+{
+  "schema_version": "1.0",
+  "content_type": "stats_report",
+  "title": "Resumo da Jornada 1 - Liga Betclic",
+  "source_file": "C:\\Users\\Arnette\\Desktop\\OrangeBallDreams_project\\AthleteDB_organized\\ai-engine\\data\\raw\\stats_jornada_1.csv",
+  "generated_at": "2026-09-01T08:45:30.067216+00:00",
+  "competition": "Liga Betclic",
+  "season": "2025/26",
+  "round": "Jornada 1",
+  "summary": "Ana Martins foi o grande destaque da Jornada 1, ao somar 27 pontos frente ao Benfica. No plano global, Arnette Hallman apresentou a performance mais completa, com um OBD Performance Index de 47.1.",
+  "best_scorer": {
+    "player": "Ana Martins",
+    "team": "Esgueira",
+    "opponent": "Benfica",
+    "points": 27
+  },
+  "most_complete": {
+    "player": "Arnette Hallman",
+    "team": "Benfica",
+    "opponent": "Esgueira",
+    "performance_index": 47.1
+  },
+  "top_points": [
+    {
+      "player": "Ana Martins",
+      "team": "Esgueira",
+      "opponent": "Benfica",
+      "points": 27
+    },
+    {
+      "player": "Arnette Hallman",
+      "team": "Benfica",
+      "opponent": "Esgueira",
+      "points": 24
+    },
+    {
+      "player": "Maria Silva",
+      "team": "Porto",
+      "opponent": "Sporting",
+      "points": 18
+    },
+    {
+      "player": "Joana Costa",
+      "team": "Sporting",
+      "opponent": "Porto",
+      "points": 15
+    },
+    {
+      "player": "Beatriz Lopes",
+      "team": "GDESSA",
+      "opponent": "Galitos",
+      "points": 12
+    }
+  ],
+  "top_rebounds": [
+    {
+      "player": "Beatriz Lopes",
+      "team": "GDESSA",
+      "opponent": "Galitos",
+      "rebounds": 12
+    },
+    {
+      "player": "Maria Silva",
+      "team": "Porto",
+      "opponent": "Sporting",
+      "rebounds": 11
+    },
+    {
+      "player": "Arnette Hallman",
+      "team": "Benfica",
+      "opponent": "Esgueira",
+      "rebounds": 8
+    },
+    {
+      "player": "Ana Martins",
+      "team": "Esgueira",
+      "opponent": "Benfica",
+      "rebounds": 6
+    },
+    {
+      "player": "Joana Costa",
+      "team": "Sporting",
+      "opponent": "Porto",
+      "rebounds": 5
+    }
+  ],
+  "top_assists": [
+    {
+      "player": "Joana Costa",
+      "team": "Sporting",
+      "opponent": "Porto",
+      "assists": 8
+    },
+    {
+      "player": "Arnette Hallman",
+      "team": "Benfica",
+      "opponent": "Esgueira",
+      "assists": 5
+    },
+    {
+      "player": "Beatriz Lopes",
+      "team": "GDESSA",
+      "opponent": "Galitos",
+      "assists": 4
+    },
+    {
+      "player": "Maria Silva",
+      "team": "Porto",
+      "opponent": "Sporting",
+      "assists": 3
+    },
+    {
+      "player": "Ana Martins",
+      "team": "Esgueira",
+      "opponent": "Benfica",
+      "assists": 2
+    }
+  ],
+  "top_performance": [
+    {
+      "player": "Arnette Hallman",
+      "team": "Benfica",
+      "opponent": "Esgueira",
+      "performance_index": 47.1
+    },
+    {
+      "player": "Ana Martins",
+      "team": "Esgueira",
+      "opponent": "Benfica",
+      "performance_index": 43.2
+    },
+    {
+      "player": "Joana Costa",
+      "team": "Sporting",
+      "opponent": "Porto",
+      "performance_index": 39.0
+    },
+    {
+      "player": "Beatriz Lopes",
+      "team": "GDESSA",
+      "opponent": "Galitos",
+      "performance_index": 38.4
+    },
+    {
+      "player": "Maria Silva",
+      "team": "Porto",
+      "opponent": "Sporting",
+      "performance_index": 37.7
+    }
+  ]
+}

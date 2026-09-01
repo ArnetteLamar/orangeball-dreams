@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.0",
+  "source_id": "fpb",
+  "player_slug": "joana-soeiro",
+  "collected_at": "2026-08-17T14:48:51.971Z",
+  "updated_at": "2026-08-17T14:48:51.972Z",
+  "status": "raw_ready",
+  "source_url": "https://example.com/fpb/game/test-001",
+  "confidence": 0.92,
+  "raw_data": {
+    "competition": "Liga Betclic",
+    "season": "2026/27",
+    "round": "Jornada Teste",
+    "opponent": "Teste Agent",
+    "points": 14,
+    "rebounds": 3,
+    "assists": 6,
+    "steals": 1,
+    "blocks": 0,
+    "minutes": 29
+  },
+  "agent": {
+    "agent_id": "orangeball-scouting-agent",
+    "proposal_type": "stat_update",
+    "agent_notes": "Teste de integracao manual do Orangeball Scouting Agent."
+  },
+  "notes": "Raw source criado a partir de AI Output colado no Admin."
+}

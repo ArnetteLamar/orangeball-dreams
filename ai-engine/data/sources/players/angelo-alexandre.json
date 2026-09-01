@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0",
+  "player_slug": "angelo-alexandre",
+  "player_name": "Angelo Alexandre",
+  "status": "active",
+  "sources": [
+    {
+      "source_id": "fpb",
+      "source_name": "Federação Portuguesa de Basquetebol",
+      "status": "planned",
+      "trust_level": "high",
+      "profile_url": "",
+      "external_player_id": "",
+      "last_checked_at": null,
+      "notes": "Fonte criada automaticamente. Ainda falta associar URL ou ID externo."
+    }
+  ]
+}

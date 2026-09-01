@@ -1,0 +1,20 @@
+{
+  "proposal_type": "stat_update",
+  "player_slug": "joana-soeiro",
+  "source_id": "fpb",
+  "source_url": "https://example.com/fpb/game/123",
+  "confidence": 0.92,
+  "data": {
+    "competition": "Liga Betclic",
+    "season": "2026/27",
+    "round": "Jornada 10",
+    "opponent": "Sporting",
+    "points": 12,
+    "rebounds": 4,
+    "assists": 7,
+    "steals": 2,
+    "blocks": 0,
+    "minutes": 31
+  },
+  "agent_notes": "Dados estatísticos encontrados na fonte configurada. Aguardam aprovação humana."
+}

@@ -1,0 +1,34 @@
+{
+  "task_id": "task-joana-soeiro-fpb-20260805-001",
+  "task_type": "analyze_stat_source",
+  "player": {
+    "player_slug": "joana-soeiro",
+    "player_name": "Joana Soeiro",
+    "club": "",
+    "league": "Liga Betclic",
+    "position": "Base",
+    "nationality": "Portugal"
+  },
+  "source": {
+    "source_id": "fpb",
+    "source_name": "Federação Portuguesa de Basquetebol",
+    "source_url": "https://example.com/fpb/game/999",
+    "external_player_id": "",
+    "trust_level": "high"
+  },
+  "input_payload": {
+    "content_type": "plain_text",
+    "collected_at": "2026-08-05T11:38:00+00:00",
+    "content": "Joana Soeiro terminou o jogo frente ao Esgueira com 14 pontos, 3 ressaltos, 6 assistências, 1 roubo de bola e 29 minutos jogados.",
+    "notes": "Texto recolhido de fonte autorizada para teste do agente."
+  },
+  "requested_output": {
+    "allowed_proposal_types": ["stat_update", "ignored"]
+  },
+  "constraints": {
+    "minimum_confidence": 0.75,
+    "json_only": true,
+    "requires_source_url": true,
+    "requires_admin_approval": true
+  }
+}

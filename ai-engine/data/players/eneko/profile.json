@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0",
+  "slug": "eneko",
+  "name": "Eneko",
+  "club": "Bilbao",
+  "position": "Shooting Guard",
+  "nationality": "Spanish",
+  "gender": "Masculino",
+  "birth_date": "",
+  "height_cm": 192,
+  "league": "Endesa - ACB",
+  "photo": "/images/players/masculino/ENEKO.png",
+  "highlight_video": "",
+  "status": "active",
+  "featured": false,
+  "tags": [],
+  "bio": "",
+  "instagram": "",
+  "youtube": "",
+  "agent_notes": "",
+  "updated_at": "2026-08-13T10:48:33.170Z"
+}

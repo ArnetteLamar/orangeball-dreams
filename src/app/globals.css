@@ -1,0 +1,1603 @@
+/* =========================================================
+   ORANGEBALL DREAMS — GLOBAL CSS
+   Estrutura:
+   01. Variables
+   02. Base
+   03. Layout
+   04. Typography
+   05. Buttons / Pills / Badges
+   06. Cards
+   07. Navbar
+   08. Homepage Premium
+   09. Athlete / Player Images
+   10. Dropdowns
+   11. Footer
+   12. Utilities
+   13. Responsive
+========================================================= */
+
+
+/* =========================================================
+   01. VARIABLES
+   Alterar aqui as cores principais do site
+========================================================= */
+
+:root {
+  --brand: #0b0f17;
+  --brand-2: #121826;
+
+  --accent: #ff7a18;
+  --accent-2: #ff9f43;
+  --accent-3: #ffb45f;
+
+  --soft: #f5f7fb;
+  --line: rgba(15, 23, 42, 0.09);
+
+  --text: #101114;
+  --text-muted: #6b7280;
+
+  --white: #ffffff;
+
+  --radius: 22px;
+  --radius-sm: 14px;
+
+  --shadow-soft: 0 14px 34px rgba(15, 23, 42, 0.09);
+  --shadow-premium: 0 24px 70px rgba(15, 23, 42, 0.22);
+
+  --home-bg-image: url("/images/backgrounds/orangeball-premium-dark-bg.png");
+  --player-bg-image: url("/images/backgrounds/orangeball-hero-bg.png");
+}
+
+
+/* =========================================================
+   02. BASE
+========================================================= */
+
+html,
+body {
+  overflow-x: hidden;
+  background:
+    radial-gradient(circle at top left, rgba(255, 122, 24, 0.08), transparent 32%),
+    radial-gradient(circle at top right, rgba(15, 23, 42, 0.08), transparent 38%),
+    #f4f5f7;
+  color: var(--text);
+}
+
+a,
+button,
+.card,
+.btn {
+  transition:
+    transform 0.22s ease,
+    box-shadow 0.22s ease,
+    filter 0.22s ease,
+    background-color 0.22s ease,
+    border-color 0.22s ease;
+}
+
+
+/* =========================================================
+   03. LAYOUT
+   Ajustar espaçamento geral das páginas
+========================================================= */
+
+.section {
+  padding: 72px 0;
+}
+
+.section--soft {
+  background:
+    linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.92),
+      rgba(246, 247, 249, 0.98)
+    );
+}
+
+
+/* =========================================================
+   04. TYPOGRAPHY
+========================================================= */
+
+.small-muted {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.title-accent {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+.title-accent::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 68px;
+  height: 4px;
+  background: linear-gradient(90deg, var(--accent), var(--accent-3));
+  border-radius: 999px;
+}
+
+.link-underline:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+  text-decoration-color: var(--accent);
+}
+
+
+/* =========================================================
+   05. BUTTONS / PILLS / BADGES
+========================================================= */
+
+.btn {
+  border-radius: 14px;
+  font-weight: 700;
+}
+
+.btn-dark {
+  background: linear-gradient(135deg, #0b1020, #171f32);
+  border-color: #0b1020;
+  color: #fff;
+}
+
+.btn-dark:hover {
+  transform: translateY(-1px);
+  filter: brightness(1.06);
+}
+
+.btn-accent {
+  background: linear-gradient(135deg, var(--accent), var(--accent-3));
+  border: none;
+  color: #111;
+  font-weight: 800;
+  box-shadow: 0 16px 32px rgba(255, 122, 24, 0.25);
+}
+
+.btn-accent:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.03);
+}
+
+.btn-outline-dark {
+  border-radius: 14px;
+  font-weight: 700;
+}
+
+.pill {
+  border: 1px solid var(--line);
+  background: #fff;
+  border-radius: 999px;
+  padding: 8px 14px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: #111;
+}
+
+.pill.active {
+  background: linear-gradient(135deg, #111827, #1f2937);
+  border-color: #111827;
+  color: #fff;
+}
+
+.pill.accent {
+  background: rgba(255, 122, 24, 0.12);
+  border-color: rgba(255, 122, 24, 0.25);
+}
+
+.home-accent-badge {
+  background: rgba(255, 122, 24, 0.16);
+  border: 1px solid rgba(255, 122, 24, 0.4);
+  color: #fff;
+}
+
+
+/* =========================================================
+   06. CARDS
+========================================================= */
+
+.card {
+  border-radius: var(--radius);
+  border: 1px solid rgba(15, 23, 42, 0.07);
+  background: rgba(255, 255, 255, 0.94);
+  box-shadow: var(--shadow-soft);
+}
+
+.shadow-soft {
+  box-shadow: var(--shadow-soft);
+}
+
+.card.hover-lift {
+  will-change: transform, box-shadow;
+}
+
+.card.hover-lift:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-premium);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.72);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-premium);
+}
+
+
+/* =========================================================
+   07. NAVBAR
+   Controlos:
+   --nav-height: altura total da navbar
+   --logo-height: tamanho do logo
+   --nav-line-top: posição vertical da linha
+========================================================= */
+
+:root {
+  --nav-height: 150px;
+  --logo-height: 165px;
+  --nav-line-top: 122px;
+}
+
+.navbar-agency {
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  min-height: var(--nav-height);
+  padding-top: 6px;
+  padding-bottom: 6px;
+  background: rgba(255, 255, 255, 0.97);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 0;
+  overflow: visible;
+  box-shadow: 0 8px 28px rgba(15, 23, 42, 0.06);
+}
+
+/* linha laranja metálica */
+.navbar-agency::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: var(--nav-line-top);
+  height: 8px;
+  background: linear-gradient(
+    90deg,
+    #5f2c00 0%,
+    #a64e00 12%,
+    #ff6f00 28%,
+    #ff9f2e 42%,
+    #ffd18a 52%,
+    #ff8a00 64%,
+    #b95800 80%,
+    #6f3200 100%
+  );
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.45) inset,
+    0 2px 8px rgba(255, 122, 24, 0.35),
+    0 0 14px rgba(255, 122, 24, 0.18);
+  z-index: 1;
+}
+
+.navbar-agency .container,
+.navbar-agency .navbar-collapse,
+.navbar-agency .navbar-nav {
+  position: relative;
+  z-index: 3;
+  overflow: visible;
+}
+
+.brand-wrap {
+  position: relative;
+  z-index: 4;
+}
+
+.brand-logo {
+  height: var(--logo-height);
+  width: auto;
+  display: block;
+  position: relative;
+  z-index: 4;
+}
+
+.navbar-agency .navbar-brand {
+  letter-spacing: 0.2px;
+  font-weight: 800;
+}
+
+.brand-wrap {
+  position: relative;
+  z-index: 4;
+}
+
+
+
+.icon-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+}
+
+.icon-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.12);
+}
+
+.lang-pill {
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  border-radius: 999px;
+  padding: 6px 10px;
+  font-weight: 800;
+  font-size: 0.85rem;
+  color: #111;
+  background: #fff;
+}
+
+.lang-pill.active {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 122, 24, 0.16),
+    rgba(255, 180, 95, 0.22)
+  );
+  border-color: rgba(255, 122, 24, 0.35);
+}
+
+
+/* =========================================================
+   08. HOMEPAGE PREMIUM
+   Fundo contínuo da homepage
+========================================================= */
+
+.home-premium-page {
+  position: relative;
+  overflow: hidden;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(6, 9, 15, 0.82) 0%,
+      rgba(9, 13, 22, 0.78) 45%,
+      rgba(9, 13, 22, 0.68) 100%
+    ),
+    var(--home-bg-image);
+  background-size: 1350px auto;
+  background-position: center top;
+  background-repeat: repeat-y;
+  background-color: #070a10;
+  color: #fff;
+}
+
+.home-premium-page::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 12% 12%, rgba(255, 122, 24, 0.14), transparent 28%),
+    radial-gradient(circle at 88% 70%, rgba(255, 122, 24, 0.12), transparent 32%),
+    linear-gradient(180deg, rgba(0, 0, 0, 0.02), rgba(0, 0, 0, 0.18));
+  pointer-events: none;
+  z-index: 0;
+}
+
+.home-premium-page > section {
+  position: relative;
+  z-index: 1;
+  background: transparent;
+  background-image: none;
+}
+
+.home-premium-page .section {
+  padding: 70px 0;
+}
+
+.home-premium-page .section + .section {
+  padding-top: 34px;
+}
+
+.home-premium-page h1,
+.home-premium-page h2 {
+  color: #fff;
+  text-shadow: 0 18px 44px rgba(0, 0, 0, 0.35);
+}
+
+.home-premium-page p,
+.home-premium-page .small-muted {
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.home-premium-page .card,
+.home-premium-page .list-group,
+.home-premium-page .list-group-item {
+  background: rgba(255, 255, 255, 0.94);
+  color: #111;
+  border-color: rgba(255, 255, 255, 0.18);
+}
+
+.home-premium-page .card p,
+.home-premium-page .card .small-muted,
+.home-premium-page .list-group-item .small-muted {
+  color: #6b7280;
+  text-shadow: none;
+}
+
+.home-premium-page .card .fw-bold,
+.home-premium-page .card .fw-semibold,
+.home-premium-page .card h1,
+.home-premium-page .card h2,
+.home-premium-page .card h3,
+.home-premium-page .card h4,
+.home-premium-page .card h5 {
+  color: #111;
+  text-shadow: none;
+}
+
+.home-hero-card {
+  background: rgba(255, 255, 255, 0.10);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: #fff;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 28px 70px rgba(0, 0, 0, 0.30);
+}
+
+.home-hero-card .card-body {
+  background: rgba(5, 8, 14, 0.38);
+}
+
+.home-hero-card .fw-bold,
+.home-hero-card .small-muted {
+  color: #fff;
+}
+
+/* Botões em cima do fundo escuro */
+.home-premium-page .btn-outline-dark {
+  background: rgba(255, 255, 255, 0.94);
+  color: #111;
+  border-color: rgba(255, 255, 255, 0.94);
+}
+
+.home-premium-page .btn-outline-dark:hover {
+  background: #fff;
+  color: #111;
+}
+
+.home-premium-page .btn-dark {
+  background: rgba(255, 255, 255, 0.96);
+  color: #111;
+  border-color: rgba(255, 255, 255, 0.96);
+}
+
+.home-premium-page .btn-accent {
+  background: linear-gradient(135deg, var(--accent), var(--accent-3));
+  color: #111;
+  border: none;
+}
+
+
+/* =========================================================
+   09. ATHLETE / PLAYER IMAGES
+========================================================= */
+
+.ratio-3x4 {
+  --bs-aspect-ratio: 133.3333%;
+}
+
+.athlete-card-image {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  border-top-left-radius: var(--radius);
+  border-top-right-radius: var(--radius);
+}
+
+.player-hero {
+  background:
+    radial-gradient(circle at top left, rgba(255, 122, 24, 0.14), transparent 35%),
+    linear-gradient(180deg, #f8f9fb 0%, #ffffff 100%);
+}
+
+.player-photo-card {
+  height: 520px;
+  overflow: hidden;
+  border-radius: 28px;
+  background: linear-gradient(135deg, #111, #333);
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.18);
+}
+
+.player-photo-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.player-profile-photo {
+  width: 100%;
+  height: 520px;
+  border-radius: 28px;
+  overflow: hidden;
+  background-image: var(--player-bg-image);
+  background-size: cover;
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-color: #f8f8f6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.player-profile-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center top;
+}
+
+.athlete-media,
+.athlete-list-photo,
+.admin-player-photo {
+  background-image: var(--player-bg-image);
+  background-size: cover;
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-color: #f8f8f6;
+  overflow: hidden;
+}
+
+.athlete-list-photo {
+  width: 100%;
+  height: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.admin-player-photo {
+  width: 100%;
+  height: 420px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*
+  Mantemos estes !important porque o Next/Image usa estilos próprios.
+  Isto garante que as fotos dos atletas não ficam cortadas.
+*/
+.athlete-list-photo > *,
+.admin-player-photo > * {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.athlete-list-photo img,
+.athlete-list-photo > * img,
+.admin-player-photo img,
+.admin-player-photo > * img,
+.athlete-media .athlete-img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;
+  object-position: center top !important;
+}
+
+.main-stat-card {
+  background: #111;
+  color: white;
+  border-radius: 18px;
+  padding: 22px 16px;
+  text-align: center;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.14);
+}
+
+.main-stat-value {
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.main-stat-label {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.orangeball-clients-hero {
+  background-image: var(--player-bg-image);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #f8f8f6;
+  color: #111;
+  min-height: 240px;
+}
+
+.orangeball-clients-hero h1,
+.orangeball-clients-hero p,
+.orangeball-clients-hero .small-muted {
+  color: #111;
+}
+
+
+/* =========================================================
+   10. DROPDOWNS
+========================================================= */
+
+.orangeball-nav-dropdown {
+  position: relative;
+}
+
+.orangeball-nav-trigger {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.orangeball-nav-arrow {
+  font-size: 0.75rem;
+  line-height: 1;
+  margin-top: 2px;
+}
+
+.orangeball-nav-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 180px;
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  border-radius: 16px;
+  box-shadow: 0 22px 55px rgba(15, 23, 42, 0.18);
+  padding: 8px;
+  z-index: 99999;
+}
+
+.orangeball-nav-menu a {
+  display: block;
+  padding: 10px 12px;
+  color: #111;
+  text-decoration: none;
+  border-radius: 10px;
+  white-space: nowrap;
+  font-size: 0.95rem;
+}
+
+.orangeball-nav-menu a:hover {
+  background: rgba(255, 122, 24, 0.14);
+  color: #111;
+}
+
+.orangeball-nav-dropdown:hover .orangeball-nav-menu,
+.orangeball-nav-dropdown:focus-within .orangeball-nav-menu {
+  display: block;
+}
+
+.clients-section {
+  scroll-margin-top: 190px;
+}
+
+
+/* =========================================================
+   11. FOOTER
+========================================================= */
+
+.footer-agency {
+  border-top: 1px solid rgba(15, 23, 42, 0.07);
+  background:
+    radial-gradient(circle at top left, rgba(255, 122, 24, 0.05), transparent 30%),
+    linear-gradient(180deg, #fff, #f7f8fb);
+}
+
+.footer-title {
+  font-weight: 800;
+  letter-spacing: 0.2px;
+}
+
+.footer-link {
+  color: #111;
+  text-decoration: none;
+  display: inline-block;
+  padding: 4px 0;
+  font-weight: 600;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+  text-decoration-color: var(--accent);
+}
+
+.footer-muted {
+  color: #6c757d;
+  font-size: 0.95rem;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(15, 23, 42, 0.07);
+  padding: 16px 0;
+  margin-top: 28px;
+}
+
+
+/* =========================================================
+   12. UTILITIES
+========================================================= */
+
+.btn-shine {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-shine::after {
+  content: "";
+  position: absolute;
+  top: -60%;
+  left: -40%;
+  width: 40%;
+  height: 220%;
+  background: rgba(255, 255, 255, 0.35);
+  transform: rotate(18deg);
+  transition: left 0.55s ease;
+}
+
+.btn-shine:hover::after {
+  left: 120%;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(10px);
+  animation: reveal 0.55s ease forwards;
+}
+
+@keyframes reveal {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.coach-info-value {
+  font-size: 1rem;
+  line-height: 1.2;
+  word-break: break-word;
+}
+
+
+/* =========================================================
+   13. RESPONSIVE
+========================================================= */
+
+@media (max-width: 991px) {
+  .section {
+    padding: 56px 0;
+  }
+
+  .navbar-agency {
+    min-height: 96px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+  }
+
+  .navbar-agency::after {
+    height: 8px;
+  }
+
+  
+
+  .orangeball-nav-menu {
+    position: static;
+    box-shadow: none;
+    border: 0;
+    padding: 4px 0 4px 14px;
+    background: transparent;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
+
+  .home-premium-page {
+    background-size: 1150px auto;
+    background-position: center top;
+  }
+
+  .home-premium-page .section {
+    padding: 56px 0;
+  }
+
+  .home-premium-page .section + .section {
+    padding-top: 22px;
+  }
+}
+
+@media (max-width: 576px) {
+  :root {
+    --radius: 18px;
+  }
+
+  .section {
+    padding: 48px 0;
+  }
+
+  .navbar-agency {
+    min-height: 82px;
+  }
+
+  .navbar-agency::after {
+    height: 6px;
+  }
+
+ 
+
+  .home-premium-page {
+    background-size: 900px auto;
+    background-position: center top;
+  }
+
+  .home-premium-page .section {
+    padding: 48px 0;
+  }
+}
+
+@media (max-width: 991px) {
+  .navbar-agency {
+    min-height: 102px;
+  }
+
+  .navbar-agency::after {
+    top: 62px;
+    height: 3px;
+  }
+
+ 
+}
+
+@media (max-width: 576px) {
+  .navbar-agency {
+    min-height: 88px;
+  }
+
+  .navbar-agency::after {
+    top: 54px;
+    height: 3px;
+  }
+
+
+}
+
+/* =========================================================
+   CLIENTS / ATHLETES PAGE
+========================================================= */
+
+/* =========================================================
+   CLIENTS / ATHLETES PAGE
+========================================================= */
+
+.clients-premium-page {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+  background:
+    linear-gradient(
+      180deg,
+      rgba(7, 10, 18, 0.96) 0%,
+      rgba(10, 14, 22, 0.95) 24%,
+      rgba(12, 16, 24, 0.93) 42%,
+      rgba(248, 248, 246, 0.98) 42%,
+      rgba(248, 248, 246, 1) 100%
+    ),
+    url("/images/backgrounds/orangeball-hero-bg.png");
+  background-repeat: no-repeat, repeat-y;
+  background-size: cover, 1200px auto;
+  background-position: center top, center top;
+}
+
+.clients-premium-page > *:not(.clients-watermark) {
+  position: relative;
+  z-index: 2;
+}
+
+
+
+.clients-hero-section {
+  color: #fff;
+  padding-top: 72px;
+  padding-bottom: 48px;
+}
+
+.clients-hero-text {
+  color: rgba(255, 255, 255, 0.78);
+  max-width: 760px;
+}
+
+.clients-search-card {
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.94);
+  border-radius: 24px;
+  padding: 20px;
+  box-shadow: 0 22px 60px rgba(0, 0, 0, 0.28);
+}
+
+.client-filter-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  padding: 8px 12px;
+  background: rgba(15, 23, 42, 0.06);
+  color: #111;
+  text-decoration: none;
+  font-size: 0.82rem;
+  font-weight: 800;
+}
+
+.client-filter-pill:hover {
+  background: rgba(255, 122, 24, 0.14);
+  color: #111;
+}
+
+.client-summary-card {
+  display: block;
+  height: 100%;
+  text-decoration: none;
+  color: #111;
+  border-radius: 22px;
+  padding: 18px;
+  background: rgba(255, 255, 255, 0.96);
+  box-shadow: 0 18px 44px rgba(0, 0, 0, 0.18);
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.client-summary-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 24px 58px rgba(0, 0, 0, 0.24);
+  color: #111;
+}
+
+.client-summary-value {
+  font-size: 1.8rem;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.client-summary-label {
+  margin-top: 6px;
+  color: #6b7280;
+  font-size: 0.85rem;
+  font-weight: 800;
+}
+
+.clients-list-section {
+  padding-top: 56px;
+  padding-bottom: 72px;
+}
+
+.clients-section {
+  scroll-margin-top: 140px;
+}
+
+.client-card {
+  border: 0;
+  border-radius: 24px;
+  background: #fff;
+}
+
+.client-card-photo-link {
+  display: block;
+  text-decoration: none;
+}
+
+.client-card-photo {
+  position: relative;
+  height: 230px;
+  overflow: hidden;
+  background:
+    linear-gradient(180deg, #ffffff 0%, #f5f5f5 100%),
+    url("/images/backgrounds/orangeball-hero-bg.png");
+  background-size: cover;
+  background-position: center;
+}
+
+/* Logo dentro da foto/card */
+.client-card-photo::after {
+  content: "";
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+  width: 64px;
+  height: 64px;
+  background-image: url("/img/logo.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  opacity: 1;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.client-card-photo > * {
+  position: relative;
+  z-index: 1;
+}
+
+.client-mini-stat {
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  border-radius: 14px;
+  padding: 10px 8px;
+  text-align: center;
+  background: #fafafa;
+}
+
+.client-coach-note {
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  border-radius: 16px;
+  padding: 12px;
+  background: #fafafa;
+  color: #6b7280;
+  font-size: 0.86rem;
+}
+
+@media (max-width: 991px) {
+  .clients-premium-page {
+    background-size: cover, 1000px auto;
+  }
+
+  
+
+  .clients-hero-section {
+    padding-top: 52px;
+  }
+}
+
+@media (max-width: 576px) {
+  .clients-premium-page {
+    background-size: cover, 760px auto;
+  }
+
+  .client-card-photo {
+    height: 250px;
+  }
+
+  .client-card-photo::after {
+    width: 54px;
+    height: 54px;
+    right: 10px;
+    bottom: 10px;
+    opacity: 0.16;
+  }
+}
+
+/* =========================================================
+   HOME CARD PHOTO LOGO
+========================================================= */
+
+.home-card-photo {
+  position: relative;
+}
+
+.home-card-photo::after {
+  content: "";
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+  width: 62px;
+  height: 62px;
+  background-image: url("/img/logo.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  opacity: 0.75;
+  pointer-events: none;
+  z-index: 3;
+}
+
+.home-card-photo > * {
+  position: relative;
+  z-index: 2;
+}
+
+.home-card-photo--small::after {
+  width: 42px;
+  height: 42px;
+  right: 8px;
+  bottom: 8px;
+  opacity: 0.75;
+}
+
+.home-card-photo--featured::after {
+  width: 56px;
+  height: 56px;
+  right: 10px;
+  bottom: 10px;
+  opacity: 0.75;
+}
+
+@media (max-width: 576px) {
+  .home-card-photo::after {
+    width: 48px;
+    height: 48px;
+    right: 9px;
+    bottom: 9px;
+    opacity: 0,9;
+  }
+
+  .home-card-photo--small::after {
+    width: 34px;
+    height: 34px;
+  }
+}
+
+/* =========================================================
+   HOME TOP STORIES / NEWS JOURNAL SECTION
+========================================================= */
+
+/* =========================================================
+   HOME NEWS JOURNAL SECTION
+========================================================= */
+/* =========================================================
+   HOME NEWS JOURNAL SECTION
+   Estilo jornal: foto maior à esquerda + conteúdo à direita
+========================================================= */
+
+.home-news-journal-section {
+  padding-top: 28px;
+}
+
+.home-news-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0;
+}
+
+/* Cada notícia em linha: foto esquerda, texto direita */
+.home-news-row {
+  display: grid;
+  grid-template-columns: 280px minmax(0, 1fr);
+  gap: 24px;
+  align-items: start;
+  padding: 22px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+  color: #fff;
+}
+
+.home-news-row:hover {
+  color: #fff;
+  transform: translateY(-3px);
+}
+
+/* Foto maior */
+.home-news-thumb {
+  position: relative;
+  height: 170px;
+  border-radius: 18px;
+  overflow: hidden;
+  background:
+    url("/images/backgrounds/orangeball-hero-bg.png"),
+    linear-gradient(180deg, #ffffff 0%, #f5f5f5 100%);
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 16px 38px rgba(0, 0, 0, 0.28);
+}
+
+.home-news-thumb::after {
+  content: "";
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  width: 44px;
+  height: 44px;
+  background-image: url("/img/logo.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  opacity: 0.75;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.home-news-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  position: relative;
+  z-index: 1;
+}
+
+.home-news-thumb-placeholder {
+  width: 100%;
+  height: 100%;
+}
+
+/* Conteúdo da notícia à direita */
+.home-news-content {
+  padding-top: 2px;
+  max-width: 780px;
+}
+
+.home-news-content h3 {
+  color: #fff;
+  font-size: 1.45rem;
+  line-height: 1.18;
+  font-weight: 900;
+  margin: 0 0 10px;
+  text-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+}
+
+.home-news-content p {
+  color: rgba(255, 255, 255, 0.78);
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.45;
+}
+
+.home-news-content .badge.text-bg-light {
+  background: rgba(255, 255, 255, 0.92) !important;
+  color: #111 !important;
+}
+
+/* Primeira notícia com mais destaque */
+.home-news-row:first-child {
+  grid-template-columns: 340px minmax(0, 1fr);
+  padding-top: 10px;
+}
+
+.home-news-row:first-child .home-news-thumb {
+  height: 205px;
+}
+
+.home-news-row:first-child .home-news-content h3 {
+  font-size: 1.7rem;
+}
+
+.home-news-row:first-child .home-news-content p {
+  font-size: 1.05rem;
+}
+
+/* Tablet */
+@media (max-width: 991px) {
+  .home-news-row,
+  .home-news-row:first-child {
+    grid-template-columns: 230px minmax(0, 1fr);
+    gap: 18px;
+  }
+
+  .home-news-thumb,
+  .home-news-row:first-child .home-news-thumb {
+    height: 155px;
+  }
+
+  .home-news-content h3,
+  .home-news-row:first-child .home-news-content h3 {
+    font-size: 1.25rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .home-news-row,
+  .home-news-row:first-child {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    padding: 20px 0;
+  }
+
+  .home-news-thumb,
+  .home-news-row:first-child .home-news-thumb {
+    height: 210px;
+  }
+
+  .home-news-content h3,
+  .home-news-row:first-child .home-news-content h3 {
+    font-size: 1.15rem;
+  }
+
+  .home-news-content p,
+  .home-news-row:first-child .home-news-content p {
+    font-size: 0.95rem;
+  }
+}
+
+/* =========================================================
+   PLAYER PROFILE — HERO + NEWS
+========================================================= */
+
+.player-profile-hero {
+  position: relative;
+  overflow: hidden;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(6, 9, 15, 0.9) 0%,
+      rgba(9, 13, 22, 0.86) 48%,
+      rgba(9, 13, 22, 0.76) 100%
+    ),
+    var(--home-bg-image);
+  background-size: 1350px auto;
+  background-position: center top;
+  background-repeat: repeat-y;
+  background-color: #070a10;
+  color: #fff;
+}
+
+.player-profile-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 12% 12%, rgba(255, 122, 24, 0.16), transparent 28%),
+    radial-gradient(circle at 88% 74%, rgba(255, 122, 24, 0.1), transparent 34%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.player-profile-hero .container {
+  position: relative;
+  z-index: 1;
+}
+
+.player-profile-hero h1,
+.player-profile-hero h2 {
+  color: #fff;
+}
+
+.player-summary-text {
+  color: rgba(255, 255, 255, 0.78);
+  max-width: 760px;
+}
+
+.player-profile-meta .badge {
+  font-weight: 800;
+}
+
+.player-profile-hero .small-muted {
+  color: rgba(255, 255, 255, 0.68);
+}
+
+.player-photo-card-premium {
+  position: relative;
+  background:
+    linear-gradient(135deg, rgba(255, 122, 24, 0.24), rgba(255, 255, 255, 0.08)),
+    rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  box-shadow: 0 28px 80px rgba(0, 0, 0, 0.36);
+}
+
+.player-photo-card-premium::after {
+  content: "";
+  position: absolute;
+  right: 18px;
+  bottom: 18px;
+  width: 82px;
+  height: 82px;
+  background-image: url("/img/logo.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  opacity: 0.75;
+  pointer-events: none;
+  z-index: 3;
+}
+
+.player-news-section {
+  background:
+    linear-gradient(180deg, #f7f7f4 0%, #ffffff 100%);
+  padding-top: 54px;
+}
+
+.player-news-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 24px;
+  padding: 22px;
+  background: rgba(255, 255, 255, 0.96);
+  border: 1px solid rgba(15, 23, 42, 0.07);
+  box-shadow: var(--shadow-soft);
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.player-news-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-premium);
+}
+
+.player-news-card h3 {
+  color: #111;
+  line-height: 1.18;
+}
+
+.player-news-card p {
+  line-height: 1.45;
+}
+
+@media (max-width: 991px) {
+  .player-profile-hero {
+    background-size: 1150px auto;
+  }
+
+  .player-photo-card-premium::after {
+    width: 68px;
+    height: 68px;
+  }
+}
+
+@media (max-width: 576px) {
+  .player-profile-hero {
+    background-size: 900px auto;
+  }
+
+  .player-photo-card-premium::after {
+    width: 56px;
+    height: 56px;
+    right: 14px;
+    bottom: 14px;
+  }
+
+  .player-news-section {
+    padding-top: 42px;
+  }
+}
+
+/* =========================================================
+   Agency news
+========================================================= */
+.premium-agency-card,
+.premium-contact-card {
+  border: 0;
+  border-radius: 28px;
+  overflow: hidden;
+}
+
+.premium-agency-card {
+  background: rgba(255, 255, 255, 0.96);
+}
+
+.premium-contact-card {
+  background:
+    linear-gradient(135deg, rgba(255, 122, 24, 0.16), rgba(255, 255, 255, 0.96)),
+    #fff;
+}
+
+.agency-simple-list {
+  display: grid;
+  gap: 14px;
+}
+
+.agency-simple-item {
+  padding: 14px 0;
+  border-bottom: 1px solid rgba(15, 23, 42, 0.08);
+}
+
+.agency-simple-item:last-child {
+  border-bottom: 0;
+}
+
+.premium-contact-card .btn {
+  font-weight: 800;
+}
+
+.contact-options-grid {
+  display: grid;
+  gap: 12px;
+}
+
+.contact-option-card {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 16px 18px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.82);
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  color: #111;
+  text-decoration: none;
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease,
+    border-color 180ms ease;
+}
+
+.contact-option-card:hover {
+  color: #111;
+  transform: translateY(-3px);
+  border-color: rgba(255, 122, 24, 0.32);
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.12);
+}
+
+.contact-option-label {
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: rgba(15, 23, 42, 0.48);
+}
+
+.contact-option-card strong {
+  font-size: 1rem;
+  word-break: break-word;
+}
+
+.contact-option-action {
+  margin-top: 4px;
+  font-size: 0.9rem;
+  font-weight: 800;
+  color: var(--accent);
+}
+
+/* =========================================================
+   MEDIA PAGE
+========================================================= */
+
+.media-premium-page {
+  min-height: 100vh;
+  background:
+    linear-gradient(
+      180deg,
+      rgba(7, 10, 18, 0.96) 0%,
+      rgba(10, 14, 22, 0.92) 36%,
+      rgba(248, 248, 246, 0.98) 36%,
+      rgba(248, 248, 246, 1) 100%
+    ),
+    var(--home-bg-image);
+  background-size: 1350px auto;
+  background-position: center top;
+  background-repeat: repeat-y;
+}
+
+.media-hero-section {
+  color: #fff;
+  padding-top: 76px;
+  padding-bottom: 70px;
+}
+
+.media-hero-text {
+  color: rgba(255, 255, 255, 0.76);
+  max-width: 760px;
+}
+
+.media-list-section {
+  padding-top: 52px;
+  padding-bottom: 76px;
+}
+
+.media-video-card {
+  border: 0;
+  border-radius: 26px;
+  background: #fff;
+}
+
+.media-video-frame {
+  overflow: hidden;
+}
+
+.media-video-card iframe {
+  border: 0;
+}
+
+@media (max-width: 576px) {
+  .media-premium-page {
+    background-size: 900px auto;
+  }
+
+  .media-hero-section {
+    padding-top: 56px;
+    padding-bottom: 48px;
+  }
+
+  .media-list-section {
+    padding-top: 36px;
+  }
+}

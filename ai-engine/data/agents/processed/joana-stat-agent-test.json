@@ -1,0 +1,20 @@
+{
+  "proposal_type": "stat_update",
+  "player_slug": "joana-soeiro",
+  "source_id": "fpb",
+  "source_url": "https://example.com/fpb/game/999",
+  "confidence": 0.91,
+  "data": {
+    "competition": "Liga Betclic",
+    "season": "2026/27",
+    "round": "Jornada 11",
+    "opponent": "Esgueira",
+    "points": 14,
+    "rebounds": 3,
+    "assists": 6,
+    "steals": 1,
+    "blocks": 0,
+    "minutes": 29
+  },
+  "agent_notes": "Teste de output validado do agente para criar raw source."
+}

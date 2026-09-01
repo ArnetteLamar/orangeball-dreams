@@ -1,0 +1,25 @@
+{
+  "schema_version": "1.0",
+  "source_id": "fpb",
+  "player_slug": "joana-soeiro",
+  "player_name": "Joana Soeiro",
+  "collected_at": "2026-08-05T09:53:22.966Z",
+  "updated_at": "2026-08-05T09:53:22.966Z",
+  "status": "draft",
+  "source_url": "https://exemplo.com/joana-soeiro",
+  "external_player_id": "joana-fpb-test",
+  "confidence": 0.9,
+  "raw_data": {
+    "competition": "",
+    "season": "",
+    "round": "",
+    "opponent": "",
+    "points": 0,
+    "rebounds": 0,
+    "assists": 0,
+    "steals": 0,
+    "blocks": 0,
+    "minutes": 0
+  },
+  "notes": "Raw draft criado manualmente via API."
+}

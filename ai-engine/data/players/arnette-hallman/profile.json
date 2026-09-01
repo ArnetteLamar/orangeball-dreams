@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0",
+  "slug": "arnette-hallman",
+  "name": "Arnette Hallman",
+  "club": "Club Queluz",
+  "position": "Small Forward",
+  "nationality": "Portuguese",
+  "gender": "Masculino",
+  "birth_date": "",
+  "height_cm": 200,
+  "league": "FPB - Portugal",
+  "photo": "/images/players/masculino/ARNETTE_V1.PNG",
+  "highlight_video": "https://www.youtube.com/embed/r0xXItfM1pI",
+  "status": "active",
+  "featured": false,
+  "tags": [],
+  "bio": "",
+  "instagram": "",
+  "youtube": "",
+  "agent_notes": "",
+  "updated_at": "2026-08-13T10:47:25.058Z"
+}

@@ -1,0 +1,24 @@
+{
+  "proposal_id": "proposal-20260724-112711-7d9e2d8e",
+  "type": "add_game",
+  "player_slug": "joana-soeiro",
+  "source": "manual_test",
+  "confidence": 0.87,
+  "status": "approved",
+  "created_at": "2026-07-24T11:27:11.735157+00:00",
+  "reviewed_at": "2026-07-24T14:02:45.884826+00:00",
+  "reviewed_by": "arnette",
+  "notes": "Teste visual das propostas no Admin.",
+  "proposed_data": {
+    "competition": "Liga Betclic",
+    "season": "2026/27",
+    "round": "Jornada 7",
+    "opponent": "CP Natação",
+    "points": 15,
+    "rebounds": 4,
+    "assists": 6,
+    "steals": 2,
+    "blocks": 0,
+    "minutes": 30
+  }
+}

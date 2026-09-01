@@ -1,0 +1,57 @@
+{
+  "schema_version": "1.0",
+  "project": "Orangeball Dreams",
+  "content_type": "generated_manifest",
+  "generated_at": "2026-09-01T08:45:30.090793+00:00",
+  "generator": "ai-engine/generate_manifest.py",
+  "players": {
+    "count": 36,
+    "index_file": "players/index.json",
+    "files": [
+      "afonso-coelho.json",
+      "ainhoa-lacorzana.json",
+      "andre-silva.json",
+      "angelo-alexandre.json",
+      "antonio-moreira.json",
+      "antonio-perez.json",
+      "antonio.json",
+      "armando-gomez.json",
+      "arnette-hallman.json",
+      "darnell-snyers.json",
+      "diego-niebla.json",
+      "diogo-gameiro.json",
+      "eneko.json",
+      "eva-carregosa.json",
+      "fran-hernandez.json",
+      "index.json",
+      "inigo.json",
+      "javi-malla.json",
+      "joana-antonio.json",
+      "joana-soeiro.json",
+      "jose-balderas.json",
+      "jose-silva.json",
+      "juscelino.json",
+      "magdalene-agyei.json",
+      "margarida-junqueira.json",
+      "mariana-garrido.json",
+      "moncho-lopez.json",
+      "pablo-mera.json",
+      "paula-curto.json",
+      "raphaella-monteiro.json",
+      "sabina-carli.json",
+      "salvador.json",
+      "sofia-kosareva.json",
+      "tunde-olumuyiwa.json",
+      "unai-barandalla.json",
+      "uxia-rodriguez.json",
+      "victor-rubio.json"
+    ]
+  },
+  "reports": {
+    "count": 1,
+    "files": [
+      "report_jornada_1.json"
+    ]
+  },
+  "status": "ok"
+}

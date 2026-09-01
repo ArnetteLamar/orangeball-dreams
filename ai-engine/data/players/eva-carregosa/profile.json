@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0",
+  "slug": "eva-carregosa",
+  "name": "Eva Carregosa",
+  "club": "CD Zamarat",
+  "position": "Point Guard",
+  "nationality": "Portuguese",
+  "gender": "Femenino",
+  "birth_date": "",
+  "height_cm": 1.65,
+  "league": "LF Challenge",
+  "photo": "/images/players/femenino/eva_v2.png",
+  "highlight_video": "",
+  "status": "active",
+  "featured": false,
+  "tags": [],
+  "bio": "",
+  "instagram": "",
+  "youtube": "",
+  "agent_notes": "",
+  "updated_at": "2026-08-13T11:04:34.741Z"
+}

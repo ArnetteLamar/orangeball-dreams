@@ -1,0 +1,132 @@
+{
+  "schema_version": "1.0",
+  "contract_id": "orangeball-agent-input-contract",
+  "agent_id": "orangeball-scouting-agent",
+  "purpose": "Definir o formato oficial do pacote de informação que é enviado ao agente antes de ele criar uma proposta estruturada.",
+  "core_rule": "O agente só deve analisar inputs que respeitem este contrato. O output final deve respeitar o Agent Output Contract.",
+  "required_fields": [
+    "task_id",
+    "task_type",
+    "player",
+    "source",
+    "input_payload",
+    "requested_output",
+    "constraints"
+  ],
+  "allowed_task_types": [
+    "analyze_stat_source",
+    "analyze_news_source",
+    "analyze_profile_source"
+  ],
+  "allowed_content_types": [
+    "plain_text",
+    "html_text",
+    "manual_text",
+    "structured_json"
+  ],
+  "allowed_requested_output_types": [
+    "stat_update",
+    "news_update",
+    "profile_update",
+    "ignored"
+  ],
+  "input_contract": {
+    "task_id": {
+      "type": "string",
+      "description": "Identificador único da tarefa enviada ao agente."
+    },
+    "task_type": {
+      "type": "string",
+      "description": "Tipo de análise que o agente deve fazer."
+    },
+    "player": {
+      "type": "object",
+      "required_fields": ["player_slug", "player_name"],
+      "fields": {
+        "player_slug": "Slug interno do atleta.",
+        "player_name": "Nome público do atleta.",
+        "club": "Clube atual, se disponível.",
+        "league": "Liga atual, se disponível.",
+        "position": "Posição do atleta, se disponível.",
+        "nationality": "Nacionalidade do atleta, se disponível."
+      }
+    },
+    "source": {
+      "type": "object",
+      "required_fields": ["source_id", "source_name", "source_url"],
+      "fields": {
+        "source_id": "ID da fonte configurada no source profile do atleta.",
+        "source_name": "Nome legível da fonte.",
+        "source_url": "URL de onde a informação foi recolhida.",
+        "external_player_id": "ID externo do atleta nessa fonte, se existir.",
+        "trust_level": "Nível de confiança da fonte."
+      }
+    },
+    "input_payload": {
+      "type": "object",
+      "required_fields": ["content_type", "collected_at", "content"],
+      "fields": {
+        "content_type": "Tipo de conteúdo enviado ao agente.",
+        "collected_at": "Data/hora em que o conteúdo foi recolhido.",
+        "content": "Texto, HTML limpo ou JSON estruturado a analisar.",
+        "notes": "Notas opcionais sobre a recolha."
+      }
+    },
+    "requested_output": {
+      "type": "object",
+      "required_fields": ["allowed_proposal_types"],
+      "fields": {
+        "allowed_proposal_types": "Lista de tipos de proposta que o agente pode devolver para esta tarefa."
+      }
+    },
+    "constraints": {
+      "type": "object",
+      "required_fields": [
+        "minimum_confidence",
+        "json_only",
+        "requires_source_url",
+        "requires_admin_approval"
+      ],
+      "fields": {
+        "minimum_confidence": "Confiança mínima para criar proposta.",
+        "json_only": "O agente deve responder apenas em JSON válido.",
+        "requires_source_url": "O output deve incluir source_url.",
+        "requires_admin_approval": "O output deve ser proposta pendente, nunca publicação direta."
+      }
+    }
+  },
+  "example_input": {
+    "task_id": "task-joana-soeiro-fpb-20260805-001",
+    "task_type": "analyze_stat_source",
+    "player": {
+      "player_slug": "joana-soeiro",
+      "player_name": "Joana Soeiro",
+      "club": "",
+      "league": "Liga Betclic",
+      "position": "Base",
+      "nationality": "Portugal"
+    },
+    "source": {
+      "source_id": "fpb",
+      "source_name": "Federação Portuguesa de Basquetebol",
+      "source_url": "https://example.com/fpb/game/999",
+      "external_player_id": "",
+      "trust_level": "high"
+    },
+    "input_payload": {
+      "content_type": "plain_text",
+      "collected_at": "2026-08-05T11:38:00+00:00",
+      "content": "Joana Soeiro terminou o jogo frente ao Esgueira com 14 pontos, 3 ressaltos, 6 assistências, 1 roubo de bola e 29 minutos jogados.",
+      "notes": "Texto recolhido de fonte autorizada para teste do agente."
+    },
+    "requested_output": {
+      "allowed_proposal_types": ["stat_update", "ignored"]
+    },
+    "constraints": {
+      "minimum_confidence": 0.75,
+      "json_only": true,
+      "requires_source_url": true,
+      "requires_admin_approval": true
+    }
+  }
+}

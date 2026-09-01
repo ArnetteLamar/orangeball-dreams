@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0",
+  "source_id": "fpb",
+  "player_slug": "joana-soeiro",
+  "player_name": "Joana Soeiro",
+  "collected_at": "2026-07-29T14:50:55.760664+00:00",
+  "status": "raw_duplicate",
+  "source_url": "https://exemplo.com/joana-soeiro",
+  "external_player_id": "joana-fpb-test",
+  "confidence": 0.9,
+  "raw_data": {
+    "competition": "Liga Betclic",
+    "season": "2026/27",
+    "round": "Jornada 9",
+    "opponent": "Sporting",
+    "points": 12,
+    "rebounds": 4,
+    "assists": 7,
+    "steals": 2,
+    "blocks": 0,
+    "minutes": 31
+  },
+  "notes": "Raw preenchido manualmente através do editor assistido. Pronto para ser transformado em proposta pendente.",
+  "updated_at": "2026-08-05T12:57:31.906363+00:00",
+  "processing_result": {
+    "processed_at": "2026-08-05T12:57:31.906380+00:00",
+    "result_status": "skipped_duplicate",
+    "proposal_id": null,
+    "duplicate_reason": "Game already exists in stats.csv on row 9"
+  }
+}

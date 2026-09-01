@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0",
+  "slug": "armando-gomez",
+  "name": "Armando Gómez",
+  "club": "Real Madrid",
+  "position": "Treinador",
+  "nationality": "Espanhola",
+  "gender": "Masculino",
+  "birth_date": "",
+  "height_cm": null,
+  "league": "Endesa - Cadete",
+  "photo": "/images/players//treinadores/Armando.png",
+  "highlight_video": "",
+  "status": "active",
+  "featured": false,
+  "tags": [],
+  "bio": "",
+  "instagram": "",
+  "youtube": "",
+  "agent_notes": "",
+  "updated_at": "2026-08-13T10:38:38.317Z"
+}

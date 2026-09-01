@@ -1,0 +1,50 @@
+{
+  "content_type": "player_ai_report",
+  "player_slug": "joana-soeiro",
+  "player_name": "Joana Soeiro",
+  "generated_at": "2026-08-25T16:26:42.708553+00:00",
+  "profile": {
+    "club": "SL Benfica",
+    "position": "Base",
+    "nationality": "Portugues"
+  },
+  "averages": {
+    "games_played": 8,
+    "ppg": 13.1,
+    "rpg": 4.5,
+    "apg": 6.5,
+    "spg": 2.2,
+    "bpg": 0.1,
+    "mpg": 27.6,
+    "performance_index": 33.0
+  },
+  "latest_game": {
+    "competition": "Liga Betclic",
+    "season": "2026/27",
+    "round": "Jornada 9",
+    "opponent": "Sporting",
+    "points": 12,
+    "rebounds": 4,
+    "assists": 7,
+    "steals": 2,
+    "blocks": 0,
+    "minutes": 31,
+    "performance_index": 31.3
+  },
+  "summary": "Joana Soeiro é um atleta de Base no SL Benfica. O perfil tem atualmente 8 jogo(s) registado(s) no Orangeball Dreams.",
+  "latest_game_summary": "Último jogo: Jornada 9 vs Sporting — 12 PTS, 4 REB, 7 AST.",
+  "strengths": [
+    "Boa capacidade de pontuação e impacto ofensivo.",
+    "Boa visão de jogo e capacidade de criação para colegas.",
+    "Impacto defensivo interessante através de roubos de bola.",
+    "Volume de minutos relevante, sugerindo confiança competitiva."
+  ],
+  "improvement_points": [
+    "Manter consistência e transformar bons indicadores em regularidade ao longo da época."
+  ],
+  "classification": {
+    "label": "Alto potencial",
+    "reason": "Os indicadores atuais mostram impacto competitivo relevante e sinais fortes para acompanhamento de scouting."
+  },
+  "recommendation": "Atleta com indicadores fortes. Deve ser acompanhado de perto para oportunidades competitivas superiores."
+}

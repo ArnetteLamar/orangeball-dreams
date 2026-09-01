@@ -1,0 +1,24 @@
+{
+  "proposal_id": "proposal-20260724-142204-302ca0e7",
+  "type": "add_game",
+  "player_slug": "joana-soeiro",
+  "source": "admin_test",
+  "confidence": 0.87,
+  "status": "approved",
+  "created_at": "2026-07-24T14:22:04.444531+00:00",
+  "reviewed_at": "2026-07-24T14:37:27.042183+00:00",
+  "reviewed_by": "arnette",
+  "notes": "Proposta de teste criada diretamente no Admin.",
+  "proposed_data": {
+    "competition": "Liga Betclic",
+    "season": "2026/27",
+    "round": "Jornada Teste",
+    "opponent": "Teste Admin",
+    "points": 15,
+    "rebounds": 4,
+    "assists": 6,
+    "steals": 2,
+    "blocks": 0,
+    "minutes": 30
+  }
+}

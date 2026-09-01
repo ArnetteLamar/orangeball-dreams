@@ -1,0 +1,22 @@
+﻿{
+  "schema_version": "1.0",
+  "source_id": "fpb",
+  "player_slug": "joana-soeiro",
+  "collected_at": "2026-07-27T00:00:00+00:00",
+  "status": "raw_sample",
+  "source_url": "",
+  "confidence": 0.88,
+  "raw_data": {
+    "competition": "Liga Betclic",
+    "season": "2026/27",
+    "round": "Jornada 8",
+    "opponent": "Benfica",
+    "points": 17,
+    "rebounds": 5,
+    "assists": 8,
+    "steals": 2,
+    "blocks": 0,
+    "minutes": 33
+  },
+  "notes": "Exemplo de estrutura para dados recolhidos de uma fonte externa antes de virarem proposta."
+}

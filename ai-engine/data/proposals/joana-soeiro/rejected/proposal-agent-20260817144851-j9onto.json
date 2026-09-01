@@ -1,0 +1,28 @@
+{
+  "proposal_id": "proposal-agent-20260817144851-j9onto",
+  "type": "add_game",
+  "source": "fpb",
+  "source_url": "https://example.com/fpb/game/test-001",
+  "confidence": 0.92,
+  "status": "rejected",
+  "created_at": "2026-08-17T14:48:51.980Z",
+  "notes": "Teste de integracao manual do Orangeball Scouting Agent.",
+  "proposed_data": {
+    "competition": "Liga Betclic",
+    "season": "2026/27",
+    "round": "Jornada Teste",
+    "opponent": "Teste Agent",
+    "points": 14,
+    "rebounds": 3,
+    "assists": 6,
+    "steals": 1,
+    "blocks": 0,
+    "minutes": 29
+  },
+  "audit": {
+    "created_by": "orangeball-scouting-agent",
+    "raw_source_file": "ai-engine\\data\\sources\\raw\\joana-soeiro-fpb-agent-20260817144851.json"
+  },
+  "reviewed_at": "2026-08-25T16:49:37.151589+00:00",
+  "reviewed_by": "arnette"
+}

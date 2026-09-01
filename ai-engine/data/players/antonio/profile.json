@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0",
+  "slug": "antonio",
+  "name": "Antonio",
+  "club": "Free Agent",
+  "position": "Treinador",
+  "nationality": "Espanhola",
+  "gender": "Masculino",
+  "birth_date": "",
+  "height_cm": null,
+  "league": "Free Agent",
+  "photo": "/images/players/treinadores/AntonioP.png",
+  "highlight_video": "",
+  "status": "active",
+  "featured": false,
+  "tags": [],
+  "bio": "",
+  "instagram": "",
+  "youtube": "",
+  "agent_notes": "",
+  "updated_at": "2026-08-13T10:39:14.773Z"
+}

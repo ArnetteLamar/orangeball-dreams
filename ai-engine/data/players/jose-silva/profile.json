@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0",
+  "slug": "jose-silva",
+  "name": "José silva",
+  "club": "Club Queluz",
+  "position": "Shooting Guard",
+  "nationality": "Portuguese",
+  "gender": "Masculino",
+  "birth_date": "",
+  "height_cm": null,
+  "league": "FPB - Portuguese",
+  "photo": "/images/players/masculino/ZE_V2.png",
+  "highlight_video": "",
+  "status": "active",
+  "featured": false,
+  "tags": [],
+  "bio": "",
+  "instagram": "",
+  "youtube": "",
+  "agent_notes": "",
+  "updated_at": "2026-08-13T10:51:13.398Z"
+}

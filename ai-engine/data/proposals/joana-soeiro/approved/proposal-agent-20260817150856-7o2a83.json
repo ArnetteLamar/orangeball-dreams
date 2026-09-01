@@ -1,0 +1,25 @@
+{
+  "proposal_id": "proposal-agent-20260817150856-7o2a83",
+  "type": "news_update",
+  "source": "orangeball_agent",
+  "source_url": "https://example.com/news/test-001",
+  "confidence": 0.91,
+  "status": "approved",
+  "created_at": "2026-08-17T15:08:56.544Z",
+  "notes": "Teste de news_update criado manualmente através do Admin.",
+  "proposed_data": {
+    "category": "interview",
+    "title": "Joana Soeiro destaca ambição para a nova época",
+    "summary": "A atleta falou sobre os objetivos da época e a importância de continuar a evoluir dentro e fora de campo.",
+    "content": "Entrevista de teste para validar o fluxo de notícias do Orangeball Scouting Agent.",
+    "published_at": "2026-08-17",
+    "source_name": "Orangeball Test Source"
+  },
+  "audit": {
+    "created_by": "orangeball-scouting-agent",
+    "raw_source_file": "ai-engine\\data\\sources\\raw\\joana-soeiro-orangeball_agent-agent-20260817150856.json"
+  },
+  "reviewed_at": "2026-08-24T11:59:18.778Z",
+  "reviewed_by": "arnette",
+  "approved_news_file": "ai-engine\\data\\players\\joana-soeiro\\news\\news-20260824115918-joana-soeiro-destaca-ambi--o-para-a-nova--poca.json"
+}

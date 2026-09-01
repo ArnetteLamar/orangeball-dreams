@@ -1,0 +1,24 @@
+{
+  "proposal_id": "proposal-20260724-110419-75e9840d",
+  "type": "add_game",
+  "player_slug": "joana-soeiro",
+  "source": "manual_test",
+  "confidence": 0.92,
+  "status": "approved",
+  "created_at": "2026-07-24T11:04:19.056127+00:00",
+  "reviewed_at": "2026-07-24T11:05:57.938132+00:00",
+  "reviewed_by": "arnette",
+  "notes": "Proposta de teste para validar o fluxo AI.",
+  "proposed_data": {
+    "competition": "Liga Betclic",
+    "season": "2026/27",
+    "round": "Jornada 4",
+    "opponent": "GDESSA",
+    "points": 16,
+    "rebounds": 5,
+    "assists": 7,
+    "steals": 2,
+    "blocks": 0,
+    "minutes": 31
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0",
+  "source_id": "orangeball_agent",
+  "player_slug": "joana-soeiro",
+  "collected_at": "2026-08-17T15:08:56.542Z",
+  "updated_at": "2026-08-17T15:08:56.542Z",
+  "status": "raw_ready",
+  "source_url": "https://example.com/news/test-001",
+  "confidence": 0.91,
+  "raw_data": {
+    "category": "interview",
+    "title": "Joana Soeiro destaca ambição para a nova época",
+    "summary": "A atleta falou sobre os objetivos da época e a importância de continuar a evoluir dentro e fora de campo.",
+    "content": "Entrevista de teste para validar o fluxo de notícias do Orangeball Scouting Agent.",
+    "published_at": "2026-08-17",
+    "source_name": "Orangeball Test Source"
+  },
+  "agent": {
+    "agent_id": "orangeball-scouting-agent",
+    "proposal_type": "news_update",
+    "agent_notes": "Teste de news_update criado manualmente através do Admin."
+  },
+  "notes": "Raw source criado a partir de AI Output colado no Admin."
+}

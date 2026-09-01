@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0",
+  "player_slug": "joana-soeiro",
+  "player_name": "Joana Soeiro",
+  "status": "active",
+  "sources": [
+    {
+      "source_id": "fpb",
+      "source_name": "Federação Portuguesa de Basquetebol",
+      "status": "active",
+      "trust_level": "high",
+      "profile_url": "https://exemplo.com/joana-soeiro",
+      "external_player_id": "joana-fpb-test",
+      "last_checked_at": null,
+      "notes": "Teste de edi��o via Admin API."
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "brand": "Orange Ball Dreams",
+  "nav": {
+    "clients": "Nuestros Clientes",
+    "news": "Noticias",
+    "games": "Partidos",
+    "about": "Sobre",
+    "contact": "Contacto",
+    "admin": "Admin"
+  },
+  "home": {
+    "tag": "Atletas • Estadísticas • Noticias",
+    "title": "Perfiles de atletas con estadísticas, noticias e historias.",
+    "subtitle": "Una base de datos moderna: bio, equipos, stats por partido/temporada — más adelante, entrevistas y media.",
+    "ctaClients": "Nuestros Clientes",
+    "ctaNews": "Noticias"
+  }
+}

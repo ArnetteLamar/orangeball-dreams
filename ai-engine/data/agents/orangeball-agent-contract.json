@@ -1,0 +1,151 @@
+{
+  "schema_version": "1.0",
+  "agent_id": "orangeball-scouting-agent",
+  "agent_name": "Orangeball Scouting Agent",
+  "status": "draft",
+  "mission": "Recolher, interpretar e preparar informação relevante sobre atletas da agência, transformando dados externos em propostas para aprovação humana.",
+  "core_rule": "O agente nunca publica dados diretamente no site. Tudo o que encontra deve ser convertido numa proposta pendente para revisão e aprovação no Admin.",
+  "allowed_sources": ["fpb","feb","club_site","media_site","manual_admin"],
+  "allowed_proposal_types": ["stat_update", "news_update", "profile_update"],
+  "workflow": [
+    {
+      "step": 1,
+      "name": "read_source_profile",
+      "description": "Ler o source profile do atleta para perceber quais as fontes autorizadas."
+    },
+    {
+      "step": 2,
+      "name": "collect_external_data",
+      "description": "Recolher dados da fonte configurada, como estatísticas, notícias ou atualizações públicas."
+    },
+    {
+      "step": 3,
+      "name": "normalize_data",
+      "description": "Converter os dados recolhidos para o formato interno da plataforma."
+    },
+    {
+      "step": 4,
+      "name": "create_proposal",
+      "description": "Criar uma proposta pendente para aprovação humana."
+    },
+    {
+      "step": 5,
+      "name": "wait_for_admin_review",
+      "description": "Aguardar aprovação ou rejeição no Admin."
+    }
+  ],
+  "safety_rules": {
+    "can_publish_directly": false,
+    "requires_admin_approval": true,
+    "must_store_source_url": true,
+    "must_store_confidence": true,
+    "must_ignore_uncertain_data": true,
+    "minimum_confidence_for_proposal": 0.75
+  },
+  "proposal_contracts": {
+    "stat_update": {
+      "required_fields": [
+        "proposal_type",
+        "player_slug",
+        "source_id",
+        "source_url",
+        "confidence",
+        "data",
+        "agent_notes"
+      ],
+      "data_fields": [
+        "competition",
+        "season",
+        "round",
+        "opponent",
+        "points",
+        "rebounds",
+        "assists",
+        "steals",
+        "blocks",
+        "minutes"
+      ],
+      "example": {
+        "proposal_type": "stat_update",
+        "player_slug": "joana-soeiro",
+        "source_id": "fpb",
+        "source_url": "",
+        "confidence": 0.92,
+        "data": {
+          "competition": "Liga Betclic",
+          "season": "2026/27",
+          "round": "Jornada 10",
+          "opponent": "Sporting",
+          "points": 12,
+          "rebounds": 4,
+          "assists": 7,
+          "steals": 2,
+          "blocks": 0,
+          "minutes": 31
+        },
+        "agent_notes": "Dados estatísticos encontrados na fonte configurada. Aguardam aprovação."
+      }
+    },
+    "news_update": {
+      "required_fields": [
+        "proposal_type",
+        "player_slug",
+        "source_id",
+        "source_url",
+        "confidence",
+        "data",
+        "agent_notes"
+      ],
+      "data_fields": ["title", "summary", "published_at", "category"],
+      "example": {
+        "proposal_type": "news_update",
+        "player_slug": "joana-soeiro",
+        "source_id": "club_site",
+        "source_url": "",
+        "confidence": 0.86,
+        "data": {
+          "title": "",
+          "summary": "",
+          "published_at": "",
+          "category": "performance"
+        },
+        "agent_notes": "Notícia encontrada e resumida. Aguardam aprovação."
+      }
+    },
+    "profile_update": {
+      "required_fields": [
+        "proposal_type",
+        "player_slug",
+        "source_id",
+        "source_url",
+        "confidence",
+        "data",
+        "agent_notes"
+      ],
+      "data_fields": [
+        "club",
+        "league",
+        "position",
+        "height",
+        "nationality",
+        "bio"
+      ],
+      "example": {
+        "proposal_type": "profile_update",
+        "player_slug": "joana-soeiro",
+        "source_id": "club_site",
+        "source_url": "",
+        "confidence": 0.8,
+        "data": {
+          "club": "",
+          "league": "",
+          "position": "",
+          "height": "",
+          "nationality": "",
+          "bio": ""
+        },
+        "agent_notes": "Possível atualização de perfil encontrada. Aguardam aprovação."
+      }
+    }
+  }
+}

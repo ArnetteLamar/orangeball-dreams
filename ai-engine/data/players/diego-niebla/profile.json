@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0",
+  "slug": "diego-niebla",
+  "name": "Diego Niebla",
+  "club": "Club Joventut Badalona",
+  "position": "Forward",
+  "nationality": "Espanhola",
+  "gender": "Masculino",
+  "birth_date": "",
+  "height_cm": 202,
+  "league": "Liga Endesa - ACB",
+  "photo": "/images/players/masculino/DIEGO_V1.png",
+  "highlight_video": "",
+  "status": "active",
+  "featured": false,
+  "tags": [],
+  "bio": "",
+  "instagram": "",
+  "youtube": "",
+  "agent_notes": "",
+  "updated_at": "2026-08-13T10:47:54.248Z"
+}
