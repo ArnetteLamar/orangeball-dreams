@@ -1606,18 +1606,32 @@ button,
    MOBILE NAVBAR FIX
 ========================================================= */
 
-@media (max-width: 991px) {
-  .navbar-agency::after {
-    display: none;
-  }
+.navbar-agency::after {
+  display: block;
+  top: 66px;
+  height: 6px;
+  z-index: 0;
+}
 
-  .navbar-agency .container {
-    position: relative;
-  }
+.navbar-agency .container {
+  position: relative;
+  z-index: 1;
+}
 
   .brand-logo {
     height: 92px;
     width: auto;
+  }
+  
+   .icon-btn {
+    width: 34px;
+    height: 34px;
+    padding: 0;
+  }
+
+  .lang-pill {
+    padding: 5px 8px;
+    font-size: 0.72rem;
   }
 
   .brand-text {
@@ -1676,7 +1690,7 @@ button,
     width: 100%;
     margin-top: 8px;
   }
-}
+
 
 @media (max-width: 576px) {
   .brand-logo {
