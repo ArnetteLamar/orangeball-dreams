@@ -1,9 +1,5 @@
 /** @type {import('next').NextConfig} */
 
-const nextConfig = {
-  outputFileTracingIncludes: {
-    "/*": ["./messages/**/*"],
-  },
-};
+const nextConfig = {};
 
 export default nextConfig;

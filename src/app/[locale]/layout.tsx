@@ -1,28 +1,32 @@
-export const runtime = "nodejs";
-
-import fs from "node:fs/promises";
-import path from "node:path";
 import type { ReactNode } from "react";
 import { I18nProvider } from "./I18nProvider";
 
-async function loadMessages(locale: string) {
-  const safe = locale === "es" ? "es" : "en";
-  const filePath = path.join(process.cwd(), "messages", `${safe}.json`);
-  const content = await fs.readFile(filePath, "utf-8");
-  return JSON.parse(content);
+import enMessages from "../../../messages/en.json";
+import esMessages from "../../../messages/es.json";
+
+type Locale = "en" | "es";
+
+const dictionaries: Record<Locale, Record<string, any>> = {
+  en: enMessages,
+  es: esMessages,
+};
+
+function getSafeLocale(locale: string): Locale {
+  return locale === "es" ? "es" : "en";
 }
 
-export default async function LocaleLayout({
+export default function LocaleLayout({
   children,
   params,
 }: {
   children: ReactNode;
   params: { locale: string };
 }) {
-  const messages = await loadMessages(params.locale);
+  const locale = getSafeLocale(params.locale);
+  const messages = dictionaries[locale];
 
   return (
-    <I18nProvider locale={params.locale} messages={messages}>
+    <I18nProvider locale={locale} messages={messages}>
       {children}
     </I18nProvider>
   );
