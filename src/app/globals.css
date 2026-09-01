@@ -1601,3 +1601,101 @@ button,
     padding-top: 36px;
   }
 }
+
+/* =========================================================
+   MOBILE NAVBAR FIX
+========================================================= */
+
+@media (max-width: 991px) {
+  .navbar-agency::after {
+    display: none;
+  }
+
+  .navbar-agency .container {
+    position: relative;
+  }
+
+  .brand-logo {
+    height: 92px;
+    width: auto;
+  }
+
+  .brand-text {
+    font-size: 0.95rem;
+    line-height: 1;
+    max-width: 150px;
+    white-space: normal;
+  }
+
+  .navbar-collapse {
+    width: 100%;
+    margin-top: 12px;
+    padding: 14px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.98);
+    box-shadow: 0 18px 45px rgba(15, 23, 42, 0.14);
+  }
+
+  .navbar-nav {
+    align-items: stretch !important;
+  }
+
+  .navbar-nav .nav-link {
+    padding: 10px 12px;
+    border-radius: 12px;
+    font-weight: 800;
+  }
+
+  .navbar-nav .nav-link:hover {
+    background: rgba(255, 122, 24, 0.1);
+  }
+
+  .orangeball-nav-dropdown {
+    position: relative;
+  }
+
+  .orangeball-nav-menu {
+    position: static;
+    display: grid;
+    gap: 6px;
+    margin: 4px 0 8px;
+    padding: 8px 12px;
+    min-width: 0;
+    border: 0;
+    box-shadow: none;
+    background: rgba(255, 122, 24, 0.07);
+    border-radius: 14px;
+  }
+
+  .orangeball-nav-menu a {
+    padding: 7px 8px;
+    font-size: 0.92rem;
+  }
+
+  .navbar-agency .btn-dark {
+    width: 100%;
+    margin-top: 8px;
+  }
+}
+
+@media (max-width: 576px) {
+  .brand-logo {
+    height: 78px;
+  }
+
+  .brand-text {
+    font-size: 0.82rem;
+    max-width: 120px;
+  }
+
+  .icon-btn {
+    width: 34px;
+    height: 34px;
+    padding: 0;
+  }
+
+  .lang-pill {
+    padding: 5px 8px;
+    font-size: 0.72rem;
+  }
+}
