@@ -1,6 +1,6 @@
 {
   "status": "rejected",
-  "created_at": "2026-09-02T11:39:44.703632+00:00",
+  "created_at": "2026-09-02T12:12:27.313604+00:00",
   "proposal_type": "news_update",
   "target": "homepage",
   "confidence": 0.9,
@@ -31,5 +31,5 @@
     "source_date": "2026-09-02",
     "why_relevant": "Used only to test the pending news proposal workflow."
   },
-  "rejected_at": "2026-09-02T11:39:58.150785+00:00"
+  "rejected_at": "2026-09-02T12:18:29.683Z"
 }

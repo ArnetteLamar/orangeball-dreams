@@ -2,6 +2,7 @@
 
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+
 import {
   type CSSProperties,
   useCallback,
@@ -13,6 +14,8 @@ import { getGeneratedManifest, type GeneratedManifest } from "@/lib/reports";
 import Link from "next/link";
 import { useLocale } from "@/app/[locale]/I18nProvider";
 import AdminLogoutButton from "@/components/AdminLogoutButton";
+import AdminNewsProposals from "@/components/AdminNewsProposals";
+
 
 type AdminPlayer = {
   slug: string;
@@ -512,6 +515,8 @@ export default function AdminPage() {
             Criar atleta
           </Link>
         </div>
+        
+        <AdminNewsProposals />
 
         <div className="card shadow-soft mb-4">
           <div className="card-body p-4">
