@@ -1,6 +1,6 @@
 {
-  "status": "pending",
-  "created_at": "2026-09-02T08:44:18.318779+00:00",
+  "status": "rejected",
+  "created_at": "2026-09-02T11:36:49.412231+00:00",
   "proposal_type": "news_update",
   "target": "homepage",
   "confidence": 0.9,
@@ -30,5 +30,6 @@
     "source_name": "Test Source",
     "source_date": "2026-09-02",
     "why_relevant": "Used only to test the pending news proposal workflow."
-  }
+  },
+  "rejected_at": "2026-09-02T11:37:06.513497+00:00"
 }
