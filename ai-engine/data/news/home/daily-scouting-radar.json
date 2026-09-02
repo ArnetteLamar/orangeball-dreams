@@ -1,0 +1,20 @@
+﻿{
+  "id": "daily-scouting-radar",
+  "date": "2026-08-26",
+  "homepage": true,
+  "category": {
+    "es": "Scouting",
+    "en": "Scouting"
+  },
+  "title": {
+    "es": "Radar diario: rendimiento, mercado y señales de oportunidad",
+    "en": "Daily radar: performance, market and opportunity signals"
+  },
+  "summary": {
+    "es": "Una lectura diaria de perfiles, movimientos y contexto competitivo.",
+    "en": "A daily read on profiles, movement and competitive context."
+  },
+  "player_slug": "antonio-moreira",
+  "href": "/{locale}/news",
+  "source": "OBD Intelligence"
+}

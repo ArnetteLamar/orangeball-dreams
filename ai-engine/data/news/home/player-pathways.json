@@ -1,0 +1,20 @@
+﻿{
+  "id": "player-pathways",
+  "date": "2026-08-25",
+  "homepage": true,
+  "category": {
+    "es": "Historias",
+    "en": "Stories"
+  },
+  "title": {
+    "es": "Más que estadísticas: las historias detrás de cada trayectoria",
+    "en": "More than stats: the stories behind every player pathway"
+  },
+  "summary": {
+    "es": "Orange Ball Dreams une datos, carrera, contexto humano y narrativa deportiva.",
+    "en": "Orange Ball Dreams connects data, career context, human support and sports storytelling."
+  },
+  "player_slug": "joana-soeiro",
+  "href": "/{locale}/about",
+  "source": "Orange Ball Dreams"
+}

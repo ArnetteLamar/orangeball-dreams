@@ -1,0 +1,20 @@
+﻿{
+  "id": "diego-seleccion-espanola",
+  "date": "2026-08-28",
+  "homepage": true,
+  "category": {
+    "es": "Selección",
+    "en": "National Team"
+  },
+  "title": {
+    "es": "Diego Niebla entra en el radar de la selección absoluta española",
+    "en": "Diego Niebla enters the Spanish senior national team radar"
+  },
+  "summary": {
+    "es": "El joven perfil español gana protagonismo en el seguimiento internacional.",
+    "en": "The young Spanish profile gains visibility in international monitoring."
+  },
+  "image": "/images/news/diego-niebla-marca.webp",
+  "href": "https://www.marca.com/baloncesto/seleccion/2026/08/25/asi-diego-niebla-perla-chus-mateo-anadido-seleccion.html",
+  "source": "Marca"
+}

@@ -1,0 +1,20 @@
+﻿{
+  "id": "performance-context",
+  "date": "2026-08-23",
+  "homepage": true,
+  "category": {
+    "es": "Rendimiento",
+    "en": "Performance"
+  },
+  "title": {
+    "es": "El contexto importa: cómo leer números, rol y evolución de un jugador",
+    "en": "Context matters: reading numbers, role and player evolution"
+  },
+  "summary": {
+    "es": "Los datos ganan valor cuando se cruzan con rol, equipo, liga y momento competitivo.",
+    "en": "Data becomes more valuable when connected with role, team, league and competitive timing."
+  },
+  "player_slug": "tunde-olumuyiwa",
+  "href": "/{locale}/news",
+  "source": "OBD Analysis"
+}

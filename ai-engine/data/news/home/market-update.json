@@ -1,0 +1,20 @@
+﻿{
+  "id": "market-update",
+  "date": "2026-08-24",
+  "homepage": true,
+  "category": {
+    "es": "Mercado",
+    "en": "Market"
+  },
+  "title": {
+    "es": "El mercado europeo sigue abriendo espacio para perfiles versátiles",
+    "en": "The European market keeps opening space for versatile profiles"
+  },
+  "summary": {
+    "es": "La versatilidad, la lectura del juego y el contexto competitivo ganan peso.",
+    "en": "Versatility, game understanding and competitive context are gaining weight."
+  },
+  "player_slug": "diego-niebla",
+  "href": "/{locale}/news",
+  "source": "OBD Market"
+}

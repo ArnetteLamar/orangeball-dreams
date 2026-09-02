@@ -37,6 +37,25 @@ type HomeNewsItem = {
   href?: string;
   source?: string;
 };
+type LocalizedText =
+  | string
+  | {
+      es?: string;
+      en?: string;
+    };
+
+type RawHomeNewsItem = {
+  id: string;
+  date: string;
+  category: LocalizedText;
+  title: LocalizedText;
+  summary: LocalizedText;
+  image?: string;
+  player_slug?: string;
+  href?: string;
+  source?: string;
+  homepage?: boolean;
+};
 
 export default function Home() {
   const t = useT();
@@ -44,6 +63,7 @@ export default function Home() {
   const isES = locale === "es";
 
   const [players, setPlayers] = useState<HomePlayer[]>([]);
+  const [rawHomeNews, setRawHomeNews] = useState<RawHomeNewsItem[]>([]);
 
   useEffect(() => {
     async function loadPlayers() {
@@ -70,6 +90,27 @@ export default function Home() {
     loadPlayers();
   }, []);
 
+  useEffect(() => {
+    async function loadHomeNews() {
+      try {
+        const response = await fetch("/generated/news/home.json");
+
+        if (!response.ok) {
+          throw new Error("Could not load home news");
+        }
+
+        const data = await response.json();
+
+        setRawHomeNews(Array.isArray(data) ? data : []);
+      } catch (error) {
+        console.error("Homepage news load error:", error);
+        setRawHomeNews([]);
+      }
+    }
+
+    loadHomeNews();
+  }, []);
+
   const featuredAthletes = useMemo(() => {
     const selected = featuredSlugs
       .map((featuredSlug) =>
@@ -86,101 +127,29 @@ export default function Home() {
 
   const heroAthletes = featuredAthletes.slice(0, 4);
 
-  const diego = players.find((player) => player.slug === "diego-niebla");
-  const tunde = players.find((player) => player.slug === "tunde-olumuyiwa");
-  const antonio = players.find((player) => player.slug === "antonio-moreira");
-  const joana = players.find((player) => player.slug === "joana-soeiro");
+  const latestHomeNews: HomeNewsItem[] = useMemo(() => {
+    return rawHomeNews
+      .map((item) => {
+        const playerPhoto = item.player_slug
+          ? players.find((player) => player.slug === item.player_slug)?.photo
+          : undefined;
 
-  const homeNews: HomeNewsItem[] = [
-    {
-      id: "diego-seleccion-espanola",
-      date: "2026-08-28",
-      category: isES ? "Selección" : "National Team",
-      title: isES
-        ? "Diego Niebla entra en el radar de la selección absoluta española"
-        : "Diego Niebla enters the Spanish senior national team radar",
-      summary: isES
-        ? "El joven perfil español gana protagonismo en el seguimiento internacional."
-        : "The young Spanish profile gains visibility in international monitoring.",
-      image: "/images/news/diego-niebla-marca.webp",
-      href: "https://www.marca.com/baloncesto/seleccion/2026/08/25/asi-diego-niebla-perla-chus-mateo-anadido-seleccion.html",
-      source: "Marca",
-    },
-    {
-      id: "pablo-mera-real-madrid-debut",
-      date: "2026-08-30",
-      category: isES ? "Real Madrid" : "Real Madrid",
-      title: isES
-        ? "Pablo Mera rompe el techo del primer equipo del Real Madrid"
-        : "Pablo Mera breaks through into Real Madrid’s first team",
-      summary: isES
-        ? "Con solo 16 años, Pablo Mera debutó como titular con el primer equipo del Real Madrid en el amistoso frente al Río Breogán, firmando una actuación con minutos, puntos, asistencias y rebotes."
-        : "At just 16 years old, Pablo Mera made his first-team Real Madrid debut as a starter in the friendly against Río Breogán, delivering a confident performance with minutes, points, assists and rebounds.",
-      image: "/images/news/pablo-mera-debut.webp",
-      href: "https://www.lavozdegalicia.es/noticia/deportes/2026/08/30/ferrolano-pablo-mera-debuta-rompe-techo-primer-equipo-real-madrid/00031788079611889216727.htm",
-      source: "La Voz de Galicia",
-    },
-    {
-      id: "daily-scouting-radar",
-      date: "2026-08-26",
-      category: "Scouting",
-      title: isES
-        ? "Radar diario: rendimiento, mercado y señales de oportunidad"
-        : "Daily radar: performance, market and opportunity signals",
-      summary: isES
-        ? "Una lectura diaria de perfiles, movimientos y contexto competitivo."
-        : "A daily read on profiles, movement and competitive context.",
-      image: antonio?.photo,
-      href: `/${locale}/news`,
-      source: "OBD Intelligence",
-    },
-    {
-      id: "player-pathways",
-      date: "2026-08-25",
-      category: isES ? "Historias" : "Stories",
-      title: isES
-        ? "Más que estadísticas: las historias detrás de cada trayectoria"
-        : "More than stats: the stories behind every player pathway",
-      summary: isES
-        ? "Orange Ball Dreams une datos, carrera, contexto humano y narrativa deportiva."
-        : "Orange Ball Dreams connects data, career context, human support and sports storytelling.",
-      image: joana?.photo,
-      href: `/${locale}/about`,
-      source: "Orange Ball Dreams",
-    },
-    {
-      id: "market-update",
-      date: "2026-08-24",
-      category: isES ? "Mercado" : "Market",
-      title: isES
-        ? "El mercado europeo sigue abriendo espacio para perfiles versátiles"
-        : "The European market keeps opening space for versatile profiles",
-      summary: isES
-        ? "La versatilidad, la lectura del juego y el contexto competitivo ganan peso."
-        : "Versatility, game understanding and competitive context are gaining weight.",
-      image: diego?.photo,
-      href: `/${locale}/news`,
-      source: "OBD Market",
-    },
-    {
-      id: "performance-context",
-      date: "2026-08-23",
-      category: isES ? "Rendimiento" : "Performance",
-      title: isES
-        ? "El contexto importa: cómo leer números, rol y evolución de un jugador"
-        : "Context matters: reading numbers, role and player evolution",
-      summary: isES
-        ? "Los datos ganan valor cuando se cruzan con rol, equipo, liga y momento competitivo."
-        : "Data becomes more valuable when connected with role, team, league and competitive timing.",
-      image: tunde?.photo,
-      href: `/${locale}/news`,
-      source: "OBD Analysis",
-    },
-  ];
+        return {
+          id: item.id,
+          date: item.date,
+          category: localizeNewsField(item.category, isES),
+          title: localizeNewsField(item.title, isES),
+          summary: localizeNewsField(item.summary, isES),
+          image: item.image || playerPhoto,
+          href: resolveNewsHref(item.href, locale),
+          source: item.source,
+        };
+      })
+      .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+      .slice(0, 6);
+  }, [rawHomeNews, players, isES, locale]);
 
-const latestHomeNews = [...homeNews]
-  .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
-  .slice(0, 6);
+
 
 const homeVideos = mediaVideos
   .filter((video) => video.featuredOnHome)
@@ -651,6 +620,25 @@ const homeVideos = mediaVideos
    </>
  );
 }
+function localizeNewsField(value: LocalizedText, isES: boolean) {
+  if (typeof value === "string") {
+    return value;
+  }
+
+  return isES ? value.es || value.en || "" : value.en || value.es || "";
+}
+
+function resolveNewsHref(href: string | undefined, locale: string) {
+  if (!href) {
+    return `/${locale}/news`;
+  }
+
+  if (href.startsWith("/")) {
+    return href.replace("{locale}", locale);
+  }
+
+  return href;
+}
 
 function HomeAthletePhoto({
   src,
@@ -698,3 +686,4 @@ function HomeAthletePhoto({
     </div>
   );
 }
+
