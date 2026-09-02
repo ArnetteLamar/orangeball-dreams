@@ -173,15 +173,7 @@ export default function Navbar() {
               </Link>
             </li>
 
-            <li className="nav-item">
-              <Link
-                className="btn btn-dark btn-sm ms-lg-2"
-                href={`/${locale}/admin`}
-                onClick={closeMenu}
-              >
-                Admin
-              </Link>
-            </li>
+           
           </ul>
         </div>
       </div>
