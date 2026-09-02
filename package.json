@@ -23,7 +23,12 @@
     "obd:agent-output": "python ai-engine/actions/validate_agent_output.py",
     "obd:agent-process": "python ai-engine/actions/process_agent_output.py",
     "obd:agent-input": "python ai-engine/actions/validate_agent_input.py",
-    "obd:agent-run-packet": "python ai-engine/actions/create_agent_run_packet.py"
+    "obd:agent-run-packet": "python ai-engine/actions/create_agent_run_packet.py",
+    "obd:news:generate": "python ai-engine/scripts/generate_home_news.py",
+    "obd:news:create-proposal": "python ai-engine/scripts/create_news_proposal.py",
+    "obd:news:list": "python ai-engine/scripts/list_news_proposals.py",
+    "obd:news:approve": "python ai-engine/scripts/approve_news_proposal.py",
+    "obd:news:reject": "python ai-engine/scripts/reject_news_proposal.py"
   },
   "dependencies": {
     "bootstrap": "^5.3.3",
