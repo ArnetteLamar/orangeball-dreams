@@ -55,7 +55,9 @@ export default function AdminNewsProposals() {
   const [loading, setLoading] = useState(false);
   const [reviewingFileName, setReviewingFileName] = useState<string | null>(
     null,
-  );
+    );
+  const [agentOutputText, setAgentOutputText] = useState("");
+  const [creatingProposal, setCreatingProposal] = useState(false);
   const [message, setMessage] = useState<string | null>(null);
 
   const loadProposals = useCallback(async () => {
@@ -136,7 +138,48 @@ export default function AdminNewsProposals() {
     } finally {
       setReviewingFileName(null);
     }
-  }
+    }
+    async function createProposalFromAgentOutput() {
+      if (!agentOutputText.trim()) {
+        alert("Cola primeiro o JSON devolvido pelo AI News Agent.");
+        return;
+      }
+
+      setCreatingProposal(true);
+      setMessage(null);
+
+      try {
+        const response = await fetch("/api/admin/news/proposals", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            action: "create_from_agent_output",
+            agent_output: agentOutputText,
+          }),
+        });
+
+        const data = await response.json();
+
+        if (!response.ok) {
+          throw new Error(data?.error || "Failed to create news proposal");
+        }
+
+        setAgentOutputText("");
+        setMessage("Proposta criada com sucesso a partir do AI News Agent.");
+
+        await loadProposals();
+      } catch (error) {
+        setMessage(
+          error instanceof Error
+            ? `Erro: ${error.message}`
+            : "Erro ao criar proposta.",
+        );
+      } finally {
+        setCreatingProposal(false);
+      }
+    }
 
   return (
     <div className="card shadow-soft mb-4">
@@ -166,6 +209,37 @@ export default function AdminNewsProposals() {
           </div>
         ) : null}
 
+        <div className="border rounded-3 p-3 mb-4 bg-light">
+          <div className="d-flex flex-column flex-lg-row justify-content-between align-items-start gap-3 mb-3">
+            <div>
+              <h3 className="h5 fw-bold mb-1">Paste AI News Output</h3>
+
+              <p className="small-muted mb-0">
+                Cola aqui o JSON devolvido pelo AI News Agent para criar uma
+                proposta pendente.
+              </p>
+            </div>
+
+            <button
+              className="btn btn-dark"
+              onClick={createProposalFromAgentOutput}
+              disabled={
+                creatingProposal || loading || reviewingFileName !== null
+              }
+            >
+              {creatingProposal ? "A criar..." : "Criar proposta"}
+            </button>
+          </div>
+
+          <textarea
+            className="form-control font-monospace"
+            rows={8}
+            value={agentOutputText}
+            onChange={(event) => setAgentOutputText(event.target.value)}
+            placeholder="Cola aqui o JSON completo devolvido pelo AI News Agent..."
+          />
+              </div>
+              
         {loading ? (
           <div className="alert alert-light mb-0">
             A carregar propostas de notícias...

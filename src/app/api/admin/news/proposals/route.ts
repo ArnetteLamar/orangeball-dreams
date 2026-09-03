@@ -276,7 +276,79 @@ export async function POST(request: Request) {
     const body = await request.json();
 
     const action = body?.action;
-    const fileName = body?.file_name;
+      const fileName = body?.file_name;
+      
+      if (action === "create_from_agent_output") {
+        const agentOutput = body?.agent_output;
+
+        if (!agentOutput || typeof agentOutput !== "string") {
+          return NextResponse.json(
+            {
+              status: "error",
+              error: "agent_output is required.",
+            },
+            { status: 400 },
+          );
+        }
+
+        let parsedOutput: NewsProposal;
+
+        try {
+          parsedOutput = safeJsonParse(agentOutput) as NewsProposal;
+        } catch {
+          return NextResponse.json(
+            {
+              status: "error",
+              error: "Invalid JSON.",
+            },
+            { status: 400 },
+          );
+        }
+
+        if (parsedOutput.proposal_type !== "news_update") {
+          return NextResponse.json(
+            {
+              status: "error",
+              error: "proposal_type must be news_update.",
+            },
+            { status: 400 },
+          );
+        }
+
+        if (!parsedOutput.data?.id || !parsedOutput.data?.date) {
+          return NextResponse.json(
+            {
+              status: "error",
+              error: "News proposal must include data.id and data.date.",
+            },
+            { status: 400 },
+          );
+        }
+
+        const newsId = slugify(parsedOutput.data.id);
+
+        const pendingProposal = {
+          ...parsedOutput,
+          status: "pending",
+          created_at: new Date().toISOString(),
+          data: {
+            ...parsedOutput.data,
+            id: newsId,
+          },
+        };
+
+        const pendingFileName = `${parsedOutput.data.date}-${newsId}.json`;
+
+        await writeJsonFile(
+          path.join(PENDING_DIR, pendingFileName),
+          pendingProposal,
+        );
+
+        return NextResponse.json({
+          status: "created",
+          file_name: pendingFileName,
+        });
+      }
 
     if (!fileName || typeof fileName !== "string") {
       return NextResponse.json(
