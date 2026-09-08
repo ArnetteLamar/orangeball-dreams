@@ -5,11 +5,11 @@
   "club": "Club Queluz",
   "position": "Shooting Guard",
   "nationality": "Portuguese",
-  "gender": "Masculino",
+  "gender": "male",
   "birth_date": "",
   "height_cm": null,
   "league": "FPB - Portuguese",
-  "photo": "/images/players/masculino/ZE_V2.png",
+  "photo": "/images/players/masculino/zequeluz.png",
   "highlight_video": "",
   "status": "active",
   "featured": false,
@@ -18,5 +18,5 @@
   "instagram": "",
   "youtube": "",
   "agent_notes": "",
-  "updated_at": "2026-08-13T10:51:13.398Z"
+  "updated_at": "2026-09-08T11:53:16.069Z"
 }

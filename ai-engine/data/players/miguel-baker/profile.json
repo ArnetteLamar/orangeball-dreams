@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0",
+  "slug": "miguel-baker",
+  "name": "Miguel Baker",
+  "profile_type": "player",
+  "club": "Miwa Basket",
+  "position": "Center",
+  "nationality": "Portugues",
+  "gender": "male",
+  "birth_date": "",
+  "height_cm": 200,
+  "league": "Serie B Italy",
+  "photo": "/images/players/masculino/miguelbaker.PNG",
+  "highlight_video": "",
+  "status": "active",
+  "featured": false,
+  "tags": [],
+  "bio": "",
+  "instagram": "",
+  "youtube": "",
+  "agent_notes": "",
+  "updated_at": "2026-09-08T11:49:27.849Z"
+}

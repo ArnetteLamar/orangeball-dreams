@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0",
+  "slug": "simao-verde",
+  "name": "Simão Verde",
+  "profile_type": "player",
+  "club": "Vitoria de Guimarães",
+  "position": "Base",
+  "nationality": "Portuguese",
+  "gender": "male",
+  "birth_date": "",
+  "height_cm": null,
+  "league": "Liga Betclic",
+  "photo": "/images/players/masculino/simao.PNG",
+  "highlight_video": "",
+  "status": "active",
+  "featured": false,
+  "tags": [],
+  "bio": "",
+  "instagram": "",
+  "youtube": "",
+  "agent_notes": "",
+  "updated_at": "2026-09-08T11:06:12.350Z"
+}

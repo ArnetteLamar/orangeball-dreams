@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0",
+  "slug": "carolina-kert",
+  "name": "Carolina Kert",
+  "profile_type": "player",
+  "club": "Riga",
+  "position": "Point Guard",
+  "nationality": "Finnish",
+  "gender": "female",
+  "birth_date": "",
+  "height_cm": null,
+  "league": "WBBL",
+  "photo": "/images/players/femenino/carolinakerl.PNG",
+  "highlight_video": "",
+  "status": "active",
+  "featured": false,
+  "tags": [],
+  "bio": "",
+  "instagram": "",
+  "youtube": "",
+  "agent_notes": "",
+  "updated_at": "2026-09-08T11:31:05.718Z"
+}

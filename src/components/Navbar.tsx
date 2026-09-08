@@ -172,8 +172,6 @@ export default function Navbar() {
                 {contactLabel}
               </Link>
             </li>
-
-           
           </ul>
         </div>
       </div>
