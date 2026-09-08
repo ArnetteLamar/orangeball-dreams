@@ -1,5 +1,7 @@
 import type { ReactNode } from "react";
+import type { Metadata, Viewport } from "next";
 import { I18nProvider } from "./I18nProvider";
+import PwaRegister from "@/components/PwaRegister";
 
 import enMessages from "../../../messages/en.json";
 import esMessages from "../../../messages/es.json";

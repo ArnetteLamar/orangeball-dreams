@@ -1,0 +1,35 @@
+{
+  "proposal_type": "news_update",
+  "target": "homepage",
+  "confidence": 0.9,
+  "data": {
+    "id": "test-admin-news-flow",
+    "date": "2026-09-08",
+    "homepage": true,
+    "category": {
+      "es": "Scouting",
+      "en": "Scouting"
+    },
+    "title": {
+      "es": "Prueba del flujo de noticias desde el Admin",
+      "en": "Admin news workflow test"
+    },
+    "summary": {
+      "es": "Esta prueba valida que el Admin puede recibir un output del AI News Agent y transformarlo en una propuesta pendiente.",
+      "en": "This test validates that the Admin can receive AI News Agent output and transform it into a pending proposal."
+    },
+    "image": "",
+    "player_slug": "",
+    "href": "https://example.com/test-admin-news-flow",
+    "source": "Test Source"
+  },
+  "evidence": {
+    "source_url": "https://example.com/test-admin-news-flow",
+    "source_name": "Test Source",
+    "source_date": "2026-09-08",
+    "why_relevant": "Used only to validate the Admin news proposal workflow."
+  },
+  "status": "rejected",
+  "created_at": "2026-09-08T08:59:28.547Z",
+  "rejected_at": "2026-09-08T08:59:39.892Z"
+}

@@ -114,7 +114,7 @@ async function listPendingNewsProposals() {
 
   const fileNames = await fs.readdir(PENDING_DIR).catch(() => [] as string[]);
 
-  const proposals = [];
+  const proposals: Array<NewsProposal & { file_name: string }> = [];
 
   for (const fileName of fileNames) {
     if (!fileName.endsWith(".json")) continue;
@@ -134,18 +134,23 @@ async function listPendingNewsProposals() {
       proposals.push({
         file_name: fileName,
         status: "invalid",
+        created_at: "",
         proposal_type: "news_update",
         target: "homepage",
         confidence: 0,
         data: {
           id: fileName,
           date: "",
+          homepage: false,
           category: "Invalid",
           title: "Invalid JSON proposal",
           summary: "This pending proposal could not be read.",
+          image: "",
+          player_slug: "",
           href: "",
           source: "Unknown",
         },
+        evidence: {},
       });
     }
   }
