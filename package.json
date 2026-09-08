@@ -28,7 +28,8 @@
     "obd:news:create-proposal": "python ai-engine/scripts/create_news_proposal.py",
     "obd:news:list": "python ai-engine/scripts/list_news_proposals.py",
     "obd:news:approve": "python ai-engine/scripts/approve_news_proposal.py",
-    "obd:news:reject": "python ai-engine/scripts/reject_news_proposal.py"
+    "obd:news:reject": "python ai-engine/scripts/reject_news_proposal.py",
+    "obd:release-check": "npm run obd:generate && npm run obd:news:generate && npm run obd:health && npm run build"
   },
   "dependencies": {
     "bootstrap": "^5.3.3",
