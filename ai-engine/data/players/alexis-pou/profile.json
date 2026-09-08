@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0",
+  "slug": "alexis-pou",
+  "name": "Alexis Pou",
+  "profile_type": "player",
+  "club": "Lleida",
+  "position": "forward",
+  "nationality": "Spanish",
+  "gender": "male",
+  "birth_date": "",
+  "height_cm": null,
+  "league": "Feb",
+  "photo": "/images/players/masculino/alexispou.PNG",
+  "highlight_video": "",
+  "status": "active",
+  "featured": false,
+  "tags": [],
+  "bio": "",
+  "instagram": "",
+  "youtube": "",
+  "agent_notes": "",
+  "updated_at": "2026-09-08T12:48:57.373Z"
+}

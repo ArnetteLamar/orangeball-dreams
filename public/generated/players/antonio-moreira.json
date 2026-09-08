@@ -5,7 +5,7 @@
   "club": "SC Braga",
   "position": "Forward",
   "nationality": "Portuguese",
-  "gender": "Masculino",
+  "gender": "male",
   "birth_date": "",
   "height_cm": 196,
   "league": "FPB - Portugal",
@@ -18,7 +18,7 @@
   "instagram": "",
   "youtube": "",
   "agent_notes": "",
-  "updated_at": "2026-08-13T10:46:13.637Z",
+  "updated_at": "2026-09-08T12:28:24.875Z",
   "content_type": "player_profile",
   "summary": "Antônio Moreira has been added to Orangeball Dreams. Full performance data will appear once official game stats are registered.",
   "averages": {
@@ -47,7 +47,7 @@
   },
   "games": [],
   "news": [],
-  "generated_at": "2026-09-08T11:56:08.152344+00:00",
+  "generated_at": "2026-09-08T12:48:51.055132+00:00",
   "source": {
     "type": "ai-engine",
     "player_slug": "antonio-moreira",

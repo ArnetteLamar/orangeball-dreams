@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0",
+  "slug": "jorge-niebla",
+  "name": "Jorge Niebla",
+  "profile_type": "player",
+  "club": "Real Madrid",
+  "position": "Forward",
+  "nationality": "Spanish",
+  "gender": "male",
+  "birth_date": "",
+  "height_cm": null,
+  "league": "Espanhola",
+  "photo": "/images/players/masculino/jorgeniebla.PNG",
+  "highlight_video": "",
+  "status": "active",
+  "featured": false,
+  "tags": [],
+  "bio": "",
+  "instagram": "",
+  "youtube": "",
+  "agent_notes": "",
+  "updated_at": "2026-09-08T12:43:55.006Z"
+}

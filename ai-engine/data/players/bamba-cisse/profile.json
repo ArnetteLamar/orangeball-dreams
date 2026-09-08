@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0",
+  "slug": "bamba-cisse",
+  "name": "Bamba Cisse",
+  "profile_type": "player",
+  "club": "1 de Agosto",
+  "position": "forward",
+  "nationality": "Angolan",
+  "gender": "male",
+  "birth_date": "",
+  "height_cm": null,
+  "league": "Liga Angolana",
+  "photo": "/images/players/masculino/bamba.PNG",
+  "highlight_video": "",
+  "status": "active",
+  "featured": false,
+  "tags": [],
+  "bio": "",
+  "instagram": "",
+  "youtube": "",
+  "agent_notes": "",
+  "updated_at": "2026-09-08T12:33:27.154Z"
+}
