@@ -1,0 +1,50 @@
+{
+  "content_type": "player_ai_report",
+  "player_slug": "pablo-mera",
+  "player_name": "Pablo Mera",
+  "generated_at": "2026-09-11T11:07:55.515933+00:00",
+  "profile": {
+    "club": "Real Madrid",
+    "position": "Guard",
+    "nationality": "Spanish"
+  },
+  "averages": {
+    "games_played": 0,
+    "ppg": 0,
+    "rpg": 0,
+    "apg": 0,
+    "spg": 0,
+    "bpg": 0,
+    "mpg": 0,
+    "performance_index": 0
+  },
+  "latest_game": {
+    "competition": "",
+    "season": "",
+    "round": "No games registered yet",
+    "opponent": "",
+    "points": 0,
+    "rebounds": 0,
+    "assists": 0,
+    "steals": 0,
+    "blocks": 0,
+    "minutes": 0,
+    "performance_index": 0
+  },
+  "summary": "Pablo Mera é um atleta de Guard no Real Madrid. O perfil tem atualmente 0 jogo(s) registado(s) no Orangeball Dreams.",
+  "latest_game_summary": "Último jogo: No games registered yet vs  — 0 PTS, 0 REB, 0 AST.",
+  "strengths": [
+    "Perfil ainda com dados limitados. É necessário acompanhar mais jogos."
+  ],
+  "improvement_points": [
+    "Aumentar consistência ofensiva e volume de contribuição em pontos.",
+    "Melhorar impacto na criação de jogo e distribuição.",
+    "Aumentar presença no ressalto e envolvimento físico.",
+    "Conquistar maior estabilidade de minutos através de consistência competitiva."
+  ],
+  "classification": {
+    "label": "Precisa de mais dados",
+    "reason": "O atleta ainda tem poucos jogos registados para uma avaliação sólida."
+  },
+  "recommendation": "Ainda não existem dados suficientes para uma recomendação sólida de scouting."
+}

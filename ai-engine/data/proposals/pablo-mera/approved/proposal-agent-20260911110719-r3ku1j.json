@@ -1,0 +1,25 @@
+{
+  "proposal_id": "proposal-agent-20260911110719-r3ku1j",
+  "type": "news_update",
+  "source": "pablo-mera-real-madrid-first-team-step-2026",
+  "source_url": "https://www.lavozdegalicia.es/noticia/deportes/2026/08/30/ferrolano-pablo-mera-debuta-rompe-techo-primer-equipo-real-madrid/00031788079611889216727.htm",
+  "confidence": 0.92,
+  "status": "approved",
+  "created_at": "2026-09-11T11:07:19.823Z",
+  "notes": "Proposta de notícia criada a partir do Orangeball Scouting Agent.",
+  "proposed_data": {
+    "category": "News",
+    "title": "Pablo Mera takes another step with Real Madrid first-team exposure",
+    "summary": "Pablo Mera continues to build momentum inside the Real Madrid structure, combining strong youth-team visibility with recent first-team exposure during the pre-season period.",
+    "content": "Pablo Mera is gaining important visibility within the Real Madrid basketball pathway. After standing out in youth and national-team contexts, he has recently been connected with the first-team environment during pre-season, reinforcing his status as one of the most interesting young Spanish guard prospects to monitor.",
+    "published_at": "2026-09-11",
+    "source_name": "La Voz de Galicia"
+  },
+  "audit": {
+    "created_by": "orangeball-scouting-agent",
+    "raw_source_file": "ai-engine\\data\\sources\\raw\\pablo-mera-pablo-mera-real-madrid-first-team-step-2026-agent-20260911110719.json"
+  },
+  "reviewed_at": "2026-09-11T11:07:50.246Z",
+  "reviewed_by": "arnette",
+  "approved_news_file": "ai-engine\\data\\players\\pablo-mera\\news\\news-20260911110750-pablo-mera-takes-another-step-with-real-madrid-first-team-ex.json"
+}
