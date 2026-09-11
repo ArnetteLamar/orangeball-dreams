@@ -1,0 +1,37 @@
+{
+  "proposal_type": "news_update",
+  "target": "homepage",
+  "source_id": "cleusio-castro-angola-petro-bal-spotlight-2026",
+  "source_url": "https://bal.nba.com/news/petro-de-luanda-advance-to-the-bal-final-for-the-third-time-in-a-row",
+  "confidence": 0.93,
+  "data": {
+    "id": "cleusio-castro-angola-petro-bal-spotlight-2026",
+    "date": "2026-09-11",
+    "homepage": true,
+    "category": {
+      "en": "Player Spotlight",
+      "es": "Foco de jugador"
+    },
+    "title": {
+      "en": "Cleusio Castro brings Angolan experience, titles and BAL pedigree",
+      "es": "Cleusio Castro aporta experiencia angoleña, títulos y recorrido BAL"
+    },
+    "summary": {
+      "en": "Angolan forward/center Cleusio Castro continues to stand out as an experienced international profile. At 2.00 m, with Petro de Luanda and Angola national-team exposure, his pathway combines competitiveness, continental experience and proven impact in high-level African basketball.",
+      "es": "El interior angoleño Cleusio Castro sigue destacando como un perfil internacional con experiencia. Con 2,00 m, recorrido en Petro de Luanda y presencia con la selección de Angola, su trayectoria combina competitividad, experiencia continental e impacto probado en el baloncesto africano de alto nivel."
+    },
+    "image": "",
+    "player_slug": "cleusio-castro",
+    "href": "/{locale}/athletes/cleusio-castro",
+    "source": "Basketball Africa League / FIBA"
+  },
+  "evidence": {
+    "source_url": "https://bal.nba.com/news/petro-de-luanda-advance-to-the-bal-final-for-the-third-time-in-a-row",
+    "source_name": "Basketball Africa League",
+    "source_date": "2026-05-28",
+    "why_relevant": "Official BAL coverage confirms Petro de Luanda's repeated BAL Finals presence and highlights a key Cleusio Castro play in the 2026 semifinal. FIBA also confirms his Angola national-team profile and Petro de Luanda club context."
+  },
+  "status": "approved",
+  "created_at": "2026-09-11T11:24:05.849Z",
+  "approved_at": "2026-09-11T11:24:15.450Z"
+}

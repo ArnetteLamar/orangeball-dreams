@@ -1137,17 +1137,8 @@ button,
   }
 }
 
-/* =========================================================
-   HOME TOP STORIES / NEWS JOURNAL SECTION
-========================================================= */
 
-/* =========================================================
-   HOME NEWS JOURNAL SECTION
-========================================================= */
-/* =========================================================
-   HOME NEWS JOURNAL SECTION
-   Estilo jornal: foto maior à esquerda + conteúdo à direita
-========================================================= */
+  
 
 .home-news-journal-section {
   padding-top: 28px;
@@ -1209,7 +1200,7 @@ button,
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center;
+  object-position: center 8%;
   display: block;
   position: relative;
   z-index: 1;

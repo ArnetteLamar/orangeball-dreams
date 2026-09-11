@@ -1,0 +1,21 @@
+{
+  "id": "cleusio-castro-angola-petro-bal-spotlight-2026",
+  "date": "2026-09-11",
+  "homepage": true,
+  "category": {
+    "en": "Player Spotlight",
+    "es": "Foco de jugador"
+  },
+  "title": {
+    "en": "Cleusio Castro brings Angolan experience, titles and BAL pedigree",
+    "es": "Cleusio Castro aporta experiencia angoleña, títulos y recorrido BAL"
+  },
+  "summary": {
+    "en": "Angolan forward/center Cleusio Castro continues to stand out as an experienced international profile. At 2.00 m, with Petro de Luanda and Angola national-team exposure, his pathway combines competitiveness, continental experience and proven impact in high-level African basketball.",
+    "es": "El interior angoleño Cleusio Castro sigue destacando como un perfil internacional con experiencia. Con 2,00 m, recorrido en Petro de Luanda y presencia con la selección de Angola, su trayectoria combina competitividad, experiencia continental e impacto probado en el baloncesto africano de alto nivel."
+  },
+  "image": "/images/news/cleusio-castro-bal.png",
+  "player_slug": "cleusio-castro",
+  "href": "/{locale}/athletes/cleusio-castro",
+  "source": "Basketball Africa League / FIBA"
+}
