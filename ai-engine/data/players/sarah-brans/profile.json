@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0",
+  "slug": "sarah-brans",
+  "name": "Sarah Brans",
+  "profile_type": "player",
+  "club": "CORTEGADA",
+  "position": "Forward",
+  "nationality": "American",
+  "gender": "female",
+  "birth_date": "",
+  "height_cm": null,
+  "league": "FEB LF2",
+  "photo": "/images/players/femenino/sarahbrans.png",
+  "highlight_video": "",
+  "status": "active",
+  "featured": false,
+  "tags": [],
+  "bio": "",
+  "instagram": "",
+  "youtube": "",
+  "agent_notes": "",
+  "updated_at": "2026-09-11T08:50:56.085Z"
+}

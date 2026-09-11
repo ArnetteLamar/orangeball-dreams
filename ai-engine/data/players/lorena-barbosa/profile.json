@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0",
+  "slug": "lorena-barbosa",
+  "name": "Lorena Barbosa",
+  "profile_type": "player",
+  "club": "Quinta dos Lombos",
+  "position": "Forward",
+  "nationality": "Brazilian",
+  "gender": "female",
+  "birth_date": "",
+  "height_cm": null,
+  "league": "Liga Betclic",
+  "photo": "/images/players/femenino/lorena.png",
+  "highlight_video": "",
+  "status": "active",
+  "featured": false,
+  "tags": [],
+  "bio": "",
+  "instagram": "",
+  "youtube": "",
+  "agent_notes": "",
+  "updated_at": "2026-09-11T09:09:32.091Z"
+}

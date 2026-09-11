@@ -9,7 +9,7 @@
   "gender": "male",
   "birth_date": "",
   "height_cm": null,
-  "league": "Feb ",
+  "league": "Feb",
   "photo": "/images/players/masculino/alexispou.PNG",
   "highlight_video": "",
   "status": "active",
@@ -19,6 +19,7 @@
   "instagram": "",
   "youtube": "",
   "agent_notes": "",
+  "updated_at": "2026-09-08T12:48:57.373Z",
   "content_type": "player_profile",
   "summary": "Alexis Pou has been added to Orangeball Dreams. Full performance data will appear once official game stats are registered.",
   "averages": {
@@ -47,7 +48,7 @@
   },
   "games": [],
   "news": [],
-  "generated_at": "2026-09-08T12:48:51.040531+00:00",
+  "generated_at": "2026-09-11T09:32:57.470889+00:00",
   "source": {
     "type": "ai-engine",
     "player_slug": "alexis-pou",

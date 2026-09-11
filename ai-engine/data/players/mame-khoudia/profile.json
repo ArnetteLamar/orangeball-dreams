@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0",
+  "slug": "mame-khoudia",
+  "name": "Mame khoudia",
+  "profile_type": "player",
+  "club": "ASC Ville de Dakar",
+  "position": "Center",
+  "nationality": "Senegal",
+  "gender": "female",
+  "birth_date": "",
+  "height_cm": null,
+  "league": "Dakar",
+  "photo": "/images/players/femenino/mame.png",
+  "highlight_video": "",
+  "status": "active",
+  "featured": false,
+  "tags": [],
+  "bio": "",
+  "instagram": "",
+  "youtube": "",
+  "agent_notes": "",
+  "updated_at": "2026-09-11T08:47:15.823Z"
+}

@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0",
+  "slug": "luz-de-giacomo",
+  "name": "Luz de Giacomo",
+  "profile_type": "player",
+  "club": "Potenza",
+  "position": "Center",
+  "nationality": "Spanish",
+  "gender": "female",
+  "birth_date": "",
+  "height_cm": null,
+  "league": "Italy Serie B",
+  "photo": "/images/players/femenino/luz.png",
+  "highlight_video": "",
+  "status": "active",
+  "featured": false,
+  "tags": [],
+  "bio": "",
+  "instagram": "",
+  "youtube": "",
+  "agent_notes": "",
+  "updated_at": "2026-09-11T09:28:23.658Z"
+}

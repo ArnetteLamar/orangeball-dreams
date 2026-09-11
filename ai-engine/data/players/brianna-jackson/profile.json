@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0",
+  "slug": "brianna-jackson",
+  "name": "Brianna Jackson",
+  "profile_type": "player",
+  "club": "Castellon",
+  "position": "Forward",
+  "nationality": "American",
+  "gender": "female",
+  "birth_date": "",
+  "height_cm": null,
+  "league": "Feb Challenge",
+  "photo": "/images/players/femenino/brianna.png",
+  "highlight_video": "",
+  "status": "active",
+  "featured": false,
+  "tags": [],
+  "bio": "",
+  "instagram": "",
+  "youtube": "",
+  "agent_notes": "",
+  "updated_at": "2026-09-11T09:06:55.502Z"
+}

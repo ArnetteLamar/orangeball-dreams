@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0",
+  "slug": "ines-vieira",
+  "name": "Ines Vieira",
+  "profile_type": "player",
+  "club": "MElilla",
+  "position": "Point Guard",
+  "nationality": "Portugues",
+  "gender": "female",
+  "birth_date": "",
+  "height_cm": null,
+  "league": "Feb Challenge",
+  "photo": "/images/players/femenino/ines.png",
+  "highlight_video": "",
+  "status": "active",
+  "featured": false,
+  "tags": [],
+  "bio": "",
+  "instagram": "",
+  "youtube": "",
+  "agent_notes": "",
+  "updated_at": "2026-09-11T09:20:28.247Z"
+}

@@ -1,5 +1,28 @@
 [
   {
+    "slug": "abril-torne",
+    "name": "Abril Torne",
+    "club": "AVILÉS",
+    "position": "Center",
+    "nationality": "Spanish",
+    "gender": "female",
+    "league": "Feb LF2",
+    "photo": "/images/players/femenino/abril.png",
+    "status": "active",
+    "summary": "Abril Torne has been added to Orangeball Dreams. Full performance data will appear once official game stats are registered.",
+    "averages": {
+      "games_played": 0,
+      "ppg": 0,
+      "rpg": 0,
+      "apg": 0,
+      "spg": 0,
+      "bpg": 0,
+      "mpg": 0,
+      "performance_index": 0
+    },
+    "generated_at": "2026-09-11T09:32:57.448352+00:00"
+  },
+  {
     "slug": "afonso-coelho",
     "name": "Afonso Coelho",
     "club": "Barreirense",
@@ -20,7 +43,7 @@
       "mpg": 0,
       "performance_index": 0
     },
-    "generated_at": "2026-09-08T12:48:51.032691+00:00"
+    "generated_at": "2026-09-11T09:32:57.455784+00:00"
   },
   {
     "slug": "ainhoa-lacorzana",
@@ -43,7 +66,30 @@
       "mpg": 0,
       "performance_index": 0
     },
-    "generated_at": "2026-09-08T12:48:51.036726+00:00"
+    "generated_at": "2026-09-11T09:32:57.462067+00:00"
+  },
+  {
+    "slug": "alexia-dizeko",
+    "name": "Alexia Dizeko",
+    "club": "Quinta dos Lombos",
+    "position": "Guard",
+    "nationality": "Angolan",
+    "gender": "female",
+    "league": "Liga Betclic",
+    "photo": "/images/players/femenino/alexia.png",
+    "status": "active",
+    "summary": "Alexia Dizeko has been added to Orangeball Dreams. Full performance data will appear once official game stats are registered.",
+    "averages": {
+      "games_played": 0,
+      "ppg": 0,
+      "rpg": 0,
+      "apg": 0,
+      "spg": 0,
+      "bpg": 0,
+      "mpg": 0,
+      "performance_index": 0
+    },
+    "generated_at": "2026-09-11T09:32:57.467086+00:00"
   },
   {
     "slug": "alexis-pou",
@@ -52,7 +98,7 @@
     "position": "forward",
     "nationality": "Spanish",
     "gender": "male",
-    "league": "Feb ",
+    "league": "Feb",
     "photo": "/images/players/masculino/alexispou.PNG",
     "status": "active",
     "summary": "Alexis Pou has been added to Orangeball Dreams. Full performance data will appear once official game stats are registered.",
@@ -66,7 +112,7 @@
       "mpg": 0,
       "performance_index": 0
     },
-    "generated_at": "2026-09-08T12:48:51.040531+00:00"
+    "generated_at": "2026-09-11T09:32:57.470889+00:00"
   },
   {
     "slug": "andre-silva",
@@ -89,7 +135,7 @@
       "mpg": 0,
       "performance_index": 0
     },
-    "generated_at": "2026-09-08T12:48:51.044219+00:00"
+    "generated_at": "2026-09-11T09:32:57.474660+00:00"
   },
   {
     "slug": "angelo-alexandre",
@@ -112,7 +158,7 @@
       "mpg": 0,
       "performance_index": 0
     },
-    "generated_at": "2026-09-08T12:48:51.048210+00:00"
+    "generated_at": "2026-09-11T09:32:57.478782+00:00"
   },
   {
     "slug": "antonio",
@@ -135,7 +181,7 @@
       "mpg": 0,
       "performance_index": 0
     },
-    "generated_at": "2026-09-08T12:48:51.051679+00:00"
+    "generated_at": "2026-09-11T09:32:57.482361+00:00"
   },
   {
     "slug": "antonio-perez",
@@ -158,7 +204,7 @@
       "mpg": 0,
       "performance_index": 0
     },
-    "generated_at": "2026-09-08T12:48:51.058479+00:00"
+    "generated_at": "2026-09-11T09:32:57.492682+00:00"
   },
   {
     "slug": "antonio-moreira",
@@ -181,7 +227,7 @@
       "mpg": 0,
       "performance_index": 0
     },
-    "generated_at": "2026-09-08T12:48:51.055132+00:00"
+    "generated_at": "2026-09-11T09:32:57.487815+00:00"
   },
   {
     "slug": "armando-gomez",
@@ -204,7 +250,7 @@
       "mpg": 0,
       "performance_index": 0
     },
-    "generated_at": "2026-09-08T12:48:51.062062+00:00"
+    "generated_at": "2026-09-11T09:32:57.496310+00:00"
   },
   {
     "slug": "arnette-hallman",
@@ -227,7 +273,7 @@
       "mpg": 0,
       "performance_index": 0
     },
-    "generated_at": "2026-09-08T12:48:51.065897+00:00"
+    "generated_at": "2026-09-11T09:32:57.499839+00:00"
   },
   {
     "slug": "bamba-cisse",
@@ -250,7 +296,30 @@
       "mpg": 0,
       "performance_index": 0
     },
-    "generated_at": "2026-09-08T12:48:51.069665+00:00"
+    "generated_at": "2026-09-11T09:32:57.504040+00:00"
+  },
+  {
+    "slug": "brianna-jackson",
+    "name": "Brianna Jackson",
+    "club": "Castellon",
+    "position": "Forward",
+    "nationality": "American",
+    "gender": "female",
+    "league": "Feb Challenge",
+    "photo": "/images/players/femenino/brianna.png",
+    "status": "active",
+    "summary": "Brianna Jackson has been added to Orangeball Dreams. Full performance data will appear once official game stats are registered.",
+    "averages": {
+      "games_played": 0,
+      "ppg": 0,
+      "rpg": 0,
+      "apg": 0,
+      "spg": 0,
+      "bpg": 0,
+      "mpg": 0,
+      "performance_index": 0
+    },
+    "generated_at": "2026-09-11T09:32:57.508783+00:00"
   },
   {
     "slug": "carolina-kert",
@@ -273,7 +342,30 @@
       "mpg": 0,
       "performance_index": 0
     },
-    "generated_at": "2026-09-08T12:48:51.073336+00:00"
+    "generated_at": "2026-09-11T09:32:57.512124+00:00"
+  },
+  {
+    "slug": "catarina-neves",
+    "name": "Catarina Neves",
+    "club": "GDRAR",
+    "position": "Point Guard",
+    "nationality": "Portugues",
+    "gender": "female",
+    "league": "Betclic",
+    "photo": "/images/players/femenino/catarinaa.png",
+    "status": "active",
+    "summary": "Catarina Neves has been added to Orangeball Dreams. Full performance data will appear once official game stats are registered.",
+    "averages": {
+      "games_played": 0,
+      "ppg": 0,
+      "rpg": 0,
+      "apg": 0,
+      "spg": 0,
+      "bpg": 0,
+      "mpg": 0,
+      "performance_index": 0
+    },
+    "generated_at": "2026-09-11T09:32:57.515846+00:00"
   },
   {
     "slug": "cleusio-castro",
@@ -296,7 +388,7 @@
       "mpg": 0,
       "performance_index": 0
     },
-    "generated_at": "2026-09-08T12:48:51.076921+00:00"
+    "generated_at": "2026-09-11T09:32:57.519504+00:00"
   },
   {
     "slug": "darnell-snyers",
@@ -319,7 +411,7 @@
       "mpg": 0,
       "performance_index": 0
     },
-    "generated_at": "2026-09-08T12:48:51.080251+00:00"
+    "generated_at": "2026-09-11T09:32:57.523926+00:00"
   },
   {
     "slug": "diego-niebla",
@@ -342,7 +434,7 @@
       "mpg": 0,
       "performance_index": 0
     },
-    "generated_at": "2026-09-08T12:48:51.083949+00:00"
+    "generated_at": "2026-09-11T09:32:57.529648+00:00"
   },
   {
     "slug": "diogo-gameiro",
@@ -365,7 +457,7 @@
       "mpg": 0,
       "performance_index": 0
     },
-    "generated_at": "2026-09-08T12:48:51.087701+00:00"
+    "generated_at": "2026-09-11T09:32:57.533942+00:00"
   },
   {
     "slug": "eduardo",
@@ -388,7 +480,30 @@
       "mpg": 0,
       "performance_index": 0
     },
-    "generated_at": "2026-09-08T12:48:51.091391+00:00"
+    "generated_at": "2026-09-11T09:32:57.538560+00:00"
+  },
+  {
+    "slug": "elise-turnubiates",
+    "name": "Elise turnubiates",
+    "club": "Sanjoanense",
+    "position": "Forward",
+    "nationality": "American",
+    "gender": "female",
+    "league": "Liga Betclic",
+    "photo": "/images/players/femenino/elise.png",
+    "status": "active",
+    "summary": "Elise turnubiates has been added to Orangeball Dreams. Full performance data will appear once official game stats are registered.",
+    "averages": {
+      "games_played": 0,
+      "ppg": 0,
+      "rpg": 0,
+      "apg": 0,
+      "spg": 0,
+      "bpg": 0,
+      "mpg": 0,
+      "performance_index": 0
+    },
+    "generated_at": "2026-09-11T09:32:57.542989+00:00"
   },
   {
     "slug": "eneko",
@@ -411,7 +526,7 @@
       "mpg": 0,
       "performance_index": 0
     },
-    "generated_at": "2026-09-08T12:48:51.095284+00:00"
+    "generated_at": "2026-09-11T09:32:57.546649+00:00"
   },
   {
     "slug": "eva-carregosa",
@@ -434,7 +549,30 @@
       "mpg": 0,
       "performance_index": 0
     },
-    "generated_at": "2026-09-08T12:48:51.099232+00:00"
+    "generated_at": "2026-09-11T09:32:57.551165+00:00"
+  },
+  {
+    "slug": "floor-bohre",
+    "name": "Floor Bohre",
+    "club": "Adareva Tenerife",
+    "position": "Forward",
+    "nationality": "Dutch",
+    "gender": "female",
+    "league": "Feb challenge",
+    "photo": "/images/players/femenino/floore.png",
+    "status": "active",
+    "summary": "Floor Bohre has been added to Orangeball Dreams. Full performance data will appear once official game stats are registered.",
+    "averages": {
+      "games_played": 0,
+      "ppg": 0,
+      "rpg": 0,
+      "apg": 0,
+      "spg": 0,
+      "bpg": 0,
+      "mpg": 0,
+      "performance_index": 0
+    },
+    "generated_at": "2026-09-11T09:32:57.556227+00:00"
   },
   {
     "slug": "fran-hernandez",
@@ -457,7 +595,30 @@
       "mpg": 0,
       "performance_index": 0
     },
-    "generated_at": "2026-09-08T12:48:51.102749+00:00"
+    "generated_at": "2026-09-11T09:32:57.561495+00:00"
+  },
+  {
+    "slug": "ines-vieira",
+    "name": "Ines Vieira",
+    "club": "MElilla",
+    "position": "Point Guard",
+    "nationality": "Portugues",
+    "gender": "female",
+    "league": "Feb Challenge",
+    "photo": "/images/players/femenino/ines.png",
+    "status": "active",
+    "summary": "Ines Vieira has been added to Orangeball Dreams. Full performance data will appear once official game stats are registered.",
+    "averages": {
+      "games_played": 0,
+      "ppg": 0,
+      "rpg": 0,
+      "apg": 0,
+      "spg": 0,
+      "bpg": 0,
+      "mpg": 0,
+      "performance_index": 0
+    },
+    "generated_at": "2026-09-11T09:32:57.565560+00:00"
   },
   {
     "slug": "javi-malla",
@@ -480,7 +641,7 @@
       "mpg": 0,
       "performance_index": 0
     },
-    "generated_at": "2026-09-08T12:48:51.109734+00:00"
+    "generated_at": "2026-09-11T09:32:57.577977+00:00"
   },
   {
     "slug": "joana-antonio",
@@ -503,7 +664,7 @@
       "mpg": 0,
       "performance_index": 0
     },
-    "generated_at": "2026-09-08T12:48:51.113236+00:00"
+    "generated_at": "2026-09-11T09:32:57.582881+00:00"
   },
   {
     "slug": "joana-soeiro",
@@ -526,7 +687,7 @@
       "mpg": 27.6,
       "performance_index": 33.0
     },
-    "generated_at": "2026-09-08T12:48:51.128509+00:00"
+    "generated_at": "2026-09-11T09:32:57.597043+00:00"
   },
   {
     "slug": "jorge-niebla",
@@ -549,7 +710,7 @@
       "mpg": 0,
       "performance_index": 0
     },
-    "generated_at": "2026-09-08T12:48:51.132457+00:00"
+    "generated_at": "2026-09-11T09:32:57.601037+00:00"
   },
   {
     "slug": "jose-balderas",
@@ -572,7 +733,7 @@
       "mpg": 0,
       "performance_index": 0
     },
-    "generated_at": "2026-09-08T12:48:51.136308+00:00"
+    "generated_at": "2026-09-11T09:32:57.606276+00:00"
   },
   {
     "slug": "jose-silva",
@@ -595,7 +756,30 @@
       "mpg": 0,
       "performance_index": 0
     },
-    "generated_at": "2026-09-08T12:48:51.139380+00:00"
+    "generated_at": "2026-09-11T09:32:57.611435+00:00"
+  },
+  {
+    "slug": "juliana-ribeiro",
+    "name": "Juliana Ribeiro",
+    "club": "Sanjoanense",
+    "position": "Center",
+    "nationality": "Brazilian",
+    "gender": "female",
+    "league": "Liga Betclic",
+    "photo": "/images/players/femenino/julianaribeiro.png",
+    "status": "active",
+    "summary": "Juliana Ribeiro has been added to Orangeball Dreams. Full performance data will appear once official game stats are registered.",
+    "averages": {
+      "games_played": 0,
+      "ppg": 0,
+      "rpg": 0,
+      "apg": 0,
+      "spg": 0,
+      "bpg": 0,
+      "mpg": 0,
+      "performance_index": 0
+    },
+    "generated_at": "2026-09-11T09:32:57.616226+00:00"
   },
   {
     "slug": "juscelino",
@@ -618,7 +802,7 @@
       "mpg": 0,
       "performance_index": 0
     },
-    "generated_at": "2026-09-08T12:48:51.142404+00:00"
+    "generated_at": "2026-09-11T09:32:57.621183+00:00"
   },
   {
     "slug": "kristinn-palsson",
@@ -641,7 +825,76 @@
       "mpg": 0,
       "performance_index": 0
     },
-    "generated_at": "2026-09-08T12:48:51.145402+00:00"
+    "generated_at": "2026-09-11T09:32:57.625113+00:00"
+  },
+  {
+    "slug": "kyra-gardner",
+    "name": "Kyra Gardner",
+    "club": "Madeira CAB",
+    "position": "Guard",
+    "nationality": "American",
+    "gender": "female",
+    "league": "Betclic",
+    "photo": "/images/players/femenino/kyra.png",
+    "status": "active",
+    "summary": "Kyra Gardner has been added to Orangeball Dreams. Full performance data will appear once official game stats are registered.",
+    "averages": {
+      "games_played": 0,
+      "ppg": 0,
+      "rpg": 0,
+      "apg": 0,
+      "spg": 0,
+      "bpg": 0,
+      "mpg": 0,
+      "performance_index": 0
+    },
+    "generated_at": "2026-09-11T09:32:57.629130+00:00"
+  },
+  {
+    "slug": "lorena-barbosa",
+    "name": "Lorena Barbosa",
+    "club": "Quinta dos Lombos",
+    "position": "Forward",
+    "nationality": "Brazilian",
+    "gender": "female",
+    "league": "Liga Betclic",
+    "photo": "/images/players/femenino/lorena.png",
+    "status": "active",
+    "summary": "Lorena Barbosa has been added to Orangeball Dreams. Full performance data will appear once official game stats are registered.",
+    "averages": {
+      "games_played": 0,
+      "ppg": 0,
+      "rpg": 0,
+      "apg": 0,
+      "spg": 0,
+      "bpg": 0,
+      "mpg": 0,
+      "performance_index": 0
+    },
+    "generated_at": "2026-09-11T09:32:57.633118+00:00"
+  },
+  {
+    "slug": "luz-de-giacomo",
+    "name": "Luz de Giacomo",
+    "club": "Potenza",
+    "position": "Center",
+    "nationality": "Spanish",
+    "gender": "female",
+    "league": "Italy Serie B",
+    "photo": "/images/players/femenino/luz.png",
+    "status": "active",
+    "summary": "Luz de Giacomo has been added to Orangeball Dreams. Full performance data will appear once official game stats are registered.",
+    "averages": {
+      "games_played": 0,
+      "ppg": 0,
+      "rpg": 0,
+      "apg": 0,
+      "spg": 0,
+      "bpg": 0,
+      "mpg": 0,
+      "performance_index": 0
+    },
+    "generated_at": "2026-09-11T09:32:57.637763+00:00"
   },
   {
     "slug": "magdalene-agyei",
@@ -664,7 +917,30 @@
       "mpg": 0,
       "performance_index": 0
     },
-    "generated_at": "2026-09-08T12:48:51.148658+00:00"
+    "generated_at": "2026-09-11T09:32:57.641648+00:00"
+  },
+  {
+    "slug": "mame-khoudia",
+    "name": "Mame khoudia",
+    "club": "ASC Ville de Dakar",
+    "position": "Center",
+    "nationality": "Senegal",
+    "gender": "female",
+    "league": "Dakar",
+    "photo": "/images/players/femenino/mame.png",
+    "status": "active",
+    "summary": "Mame khoudia has been added to Orangeball Dreams. Full performance data will appear once official game stats are registered.",
+    "averages": {
+      "games_played": 0,
+      "ppg": 0,
+      "rpg": 0,
+      "apg": 0,
+      "spg": 0,
+      "bpg": 0,
+      "mpg": 0,
+      "performance_index": 0
+    },
+    "generated_at": "2026-09-11T09:32:57.645162+00:00"
   },
   {
     "slug": "margarida-junqueira",
@@ -687,7 +963,7 @@
       "mpg": 0,
       "performance_index": 0
     },
-    "generated_at": "2026-09-08T12:48:51.151986+00:00"
+    "generated_at": "2026-09-11T09:32:57.649323+00:00"
   },
   {
     "slug": "mariana-garrido",
@@ -710,7 +986,30 @@
       "mpg": 0,
       "performance_index": 0
     },
-    "generated_at": "2026-09-08T12:48:51.154924+00:00"
+    "generated_at": "2026-09-11T09:32:57.653974+00:00"
+  },
+  {
+    "slug": "marta-roseiro",
+    "name": "Marta Roseiro",
+    "club": "GDESSA",
+    "position": "Point Guard",
+    "nationality": "Portugues",
+    "gender": "female",
+    "league": "Betclic",
+    "photo": "/images/players/femenino/marta.png",
+    "status": "active",
+    "summary": "Marta Roseiro has been added to Orangeball Dreams. Full performance data will appear once official game stats are registered.",
+    "averages": {
+      "games_played": 0,
+      "ppg": 0,
+      "rpg": 0,
+      "apg": 0,
+      "spg": 0,
+      "bpg": 0,
+      "mpg": 0,
+      "performance_index": 0
+    },
+    "generated_at": "2026-09-11T09:32:57.658869+00:00"
   },
   {
     "slug": "mason-lockhant",
@@ -733,7 +1032,7 @@
       "mpg": 0,
       "performance_index": 0
     },
-    "generated_at": "2026-09-08T12:48:51.157935+00:00"
+    "generated_at": "2026-09-11T09:32:57.662496+00:00"
   },
   {
     "slug": "miguel-baker",
@@ -756,7 +1055,7 @@
       "mpg": 0,
       "performance_index": 0
     },
-    "generated_at": "2026-09-08T12:48:51.160805+00:00"
+    "generated_at": "2026-09-11T09:32:57.672497+00:00"
   },
   {
     "slug": "miguel-fonseca",
@@ -779,7 +1078,7 @@
       "mpg": 0,
       "performance_index": 0
     },
-    "generated_at": "2026-09-08T12:48:51.163806+00:00"
+    "generated_at": "2026-09-11T09:32:57.677377+00:00"
   },
   {
     "slug": "moncho-lopez",
@@ -802,7 +1101,7 @@
       "mpg": 0,
       "performance_index": 0
     },
-    "generated_at": "2026-09-08T12:48:51.167190+00:00"
+    "generated_at": "2026-09-11T09:32:57.680788+00:00"
   },
   {
     "slug": "pablo-mera",
@@ -825,7 +1124,7 @@
       "mpg": 0,
       "performance_index": 0
     },
-    "generated_at": "2026-09-08T12:48:51.170162+00:00"
+    "generated_at": "2026-09-11T09:32:57.683929+00:00"
   },
   {
     "slug": "paula-curto",
@@ -848,7 +1147,30 @@
       "mpg": 0,
       "performance_index": 0
     },
-    "generated_at": "2026-09-08T12:48:51.173078+00:00"
+    "generated_at": "2026-09-11T09:32:57.688454+00:00"
+  },
+  {
+    "slug": "philomene-khady",
+    "name": "Philomene Khady",
+    "club": "GIJON",
+    "position": "Forward / Center",
+    "nationality": "Senegal",
+    "gender": "female",
+    "league": "FEB LF2",
+    "photo": "/images/players/femenino/philomene.png",
+    "status": "active",
+    "summary": "Philomene Khady has been added to Orangeball Dreams. Full performance data will appear once official game stats are registered.",
+    "averages": {
+      "games_played": 0,
+      "ppg": 0,
+      "rpg": 0,
+      "apg": 0,
+      "spg": 0,
+      "bpg": 0,
+      "mpg": 0,
+      "performance_index": 0
+    },
+    "generated_at": "2026-09-11T09:32:57.693666+00:00"
   },
   {
     "slug": "raida-luisa",
@@ -871,7 +1193,7 @@
       "mpg": 0,
       "performance_index": 0
     },
-    "generated_at": "2026-09-08T12:48:51.175787+00:00"
+    "generated_at": "2026-09-11T09:32:57.699234+00:00"
   },
   {
     "slug": "raphaella-monteiro",
@@ -894,7 +1216,7 @@
       "mpg": 0,
       "performance_index": 0
     },
-    "generated_at": "2026-09-08T12:48:51.179044+00:00"
+    "generated_at": "2026-09-11T09:32:57.702894+00:00"
   },
   {
     "slug": "sabina-carli",
@@ -917,7 +1239,7 @@
       "mpg": 0,
       "performance_index": 0
     },
-    "generated_at": "2026-09-08T12:48:51.182608+00:00"
+    "generated_at": "2026-09-11T09:32:57.709174+00:00"
   },
   {
     "slug": "salvador",
@@ -940,7 +1262,30 @@
       "mpg": 0,
       "performance_index": 0
     },
-    "generated_at": "2026-09-08T12:48:51.185698+00:00"
+    "generated_at": "2026-09-11T09:32:57.712485+00:00"
+  },
+  {
+    "slug": "sarah-brans",
+    "name": "Sarah Brans",
+    "club": "CORTEGADA",
+    "position": "Forward",
+    "nationality": "American",
+    "gender": "female",
+    "league": "FEB LF2",
+    "photo": "/images/players/femenino/sarahbrans.png",
+    "status": "active",
+    "summary": "Sarah Brans has been added to Orangeball Dreams. Full performance data will appear once official game stats are registered.",
+    "averages": {
+      "games_played": 0,
+      "ppg": 0,
+      "rpg": 0,
+      "apg": 0,
+      "spg": 0,
+      "bpg": 0,
+      "mpg": 0,
+      "performance_index": 0
+    },
+    "generated_at": "2026-09-11T09:32:57.716378+00:00"
   },
   {
     "slug": "simao-verde",
@@ -963,7 +1308,7 @@
       "mpg": 0,
       "performance_index": 0
     },
-    "generated_at": "2026-09-08T12:48:51.188913+00:00"
+    "generated_at": "2026-09-11T09:32:57.722859+00:00"
   },
   {
     "slug": "sofia-kosareva",
@@ -986,7 +1331,7 @@
       "mpg": 0,
       "performance_index": 0
     },
-    "generated_at": "2026-09-08T12:48:51.191847+00:00"
+    "generated_at": "2026-09-11T09:32:57.727214+00:00"
   },
   {
     "slug": "tunde-olumuyiwa",
@@ -1009,7 +1354,7 @@
       "mpg": 0,
       "performance_index": 0
     },
-    "generated_at": "2026-09-08T12:48:51.195084+00:00"
+    "generated_at": "2026-09-11T09:32:57.731710+00:00"
   },
   {
     "slug": "unai-barandalla",
@@ -1032,7 +1377,7 @@
       "mpg": 0,
       "performance_index": 0
     },
-    "generated_at": "2026-09-08T12:48:51.198955+00:00"
+    "generated_at": "2026-09-11T09:32:57.735805+00:00"
   },
   {
     "slug": "uxia-rodriguez",
@@ -1055,7 +1400,7 @@
       "mpg": 0,
       "performance_index": 0
     },
-    "generated_at": "2026-09-08T12:48:51.202038+00:00"
+    "generated_at": "2026-09-11T09:32:57.742636+00:00"
   },
   {
     "slug": "victor-rubio",
@@ -1078,7 +1423,7 @@
       "mpg": 0,
       "performance_index": 0
     },
-    "generated_at": "2026-09-08T12:48:51.205269+00:00"
+    "generated_at": "2026-09-11T09:32:57.748459+00:00"
   },
   {
     "slug": "inigo",
@@ -1101,6 +1446,6 @@
       "mpg": 0,
       "performance_index": 0
     },
-    "generated_at": "2026-09-08T12:48:51.106251+00:00"
+    "generated_at": "2026-09-11T09:32:57.572926+00:00"
   }
 ]

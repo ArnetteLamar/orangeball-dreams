@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0",
+  "slug": "marta-roseiro",
+  "name": "Marta Roseiro",
+  "profile_type": "player",
+  "club": "GDESSA",
+  "position": "Point Guard",
+  "nationality": "Portugues",
+  "gender": "female",
+  "birth_date": "",
+  "height_cm": null,
+  "league": "Betclic",
+  "photo": "/images/players/femenino/marta.png",
+  "highlight_video": "",
+  "status": "active",
+  "featured": false,
+  "tags": [],
+  "bio": "",
+  "instagram": "",
+  "youtube": "",
+  "agent_notes": "",
+  "updated_at": "2026-09-11T09:13:53.947Z"
+}
