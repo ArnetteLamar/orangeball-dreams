@@ -9,12 +9,12 @@ import { useLocale, useT } from "./I18nProvider";
 import { mediaVideos } from "@/lib/media";
 
 const featuredSlugs = [
-  "tunde-olumuyiwa",
+  "pablo-mera",
   "diego-niebla",
-  "antonio-moreira",
-  "angelo-alexandre",
-  "arnette-hallman",
-  "jose-balderas",
+  "tunde-olumuyiwa",
+  "brianna-jackson",
+  "kyra-gardner",
+  "magdalene-agyei",
 ];
 
 type HomePlayer = {
