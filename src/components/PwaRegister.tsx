@@ -4,7 +4,7 @@ import { useEffect } from "react";
 
 export default function PwaRegister() {
   useEffect(() => {
-    async function clearPwaCache() {
+    async function resetPwaCache() {
       if ("serviceWorker" in navigator) {
         const registrations = await navigator.serviceWorker.getRegistrations();
 
@@ -22,7 +22,7 @@ export default function PwaRegister() {
       }
     }
 
-    clearPwaCache().catch(() => {
+    resetPwaCache().catch(() => {
       // Ignore cache cleanup errors
     });
   }, []);

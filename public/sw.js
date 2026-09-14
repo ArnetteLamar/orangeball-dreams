@@ -1,6 +1,4 @@
-const CACHE_NAME = "orangeball-dreams-static-v2";
-
-self.addEventListener("install", (event) => {
+self.addEventListener("install", () => {
   self.skipWaiting();
 });
 
@@ -14,6 +12,6 @@ self.addEventListener("activate", (event) => {
   self.clients.claim();
 });
 
-self.addEventListener("fetch", (event) => {
+self.addEventListener("fetch", () => {
   return;
 });
