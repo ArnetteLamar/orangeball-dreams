@@ -1,0 +1,28 @@
+{
+  "proposal_id": "proposal-agent-20260914095835-uyyidg",
+  "type": "add_game",
+  "source": "pablo-mera-internal-stats-test-2026",
+  "source_url": "https://example.com/pablo-mera-internal-stats-test",
+  "confidence": 0.99,
+  "status": "approved",
+  "created_at": "2026-09-14T09:58:35.594Z",
+  "notes": "Internal test only. Validate stat_update workflow.",
+  "proposed_data": {
+    "competition": "Internal Test Competition",
+    "season": "2026/27",
+    "round": "Test Round",
+    "opponent": "Test Opponent",
+    "points": 10,
+    "rebounds": 4,
+    "assists": 3,
+    "steals": 1,
+    "blocks": 0,
+    "minutes": 22
+  },
+  "audit": {
+    "created_by": "orangeball-scouting-agent",
+    "raw_source_file": "ai-engine\\data\\sources\\raw\\pablo-mera-pablo-mera-internal-stats-test-2026-agent-20260914095835.json"
+  },
+  "reviewed_at": "2026-09-14T10:00:16.808105+00:00",
+  "reviewed_by": "arnette"
+}

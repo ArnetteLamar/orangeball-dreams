@@ -2,49 +2,46 @@
   "content_type": "player_ai_report",
   "player_slug": "pablo-mera",
   "player_name": "Pablo Mera",
-  "generated_at": "2026-09-11T11:07:55.515933+00:00",
+  "generated_at": "2026-09-14T10:00:33.077818+00:00",
   "profile": {
     "club": "Real Madrid",
     "position": "Guard",
     "nationality": "Spanish"
   },
   "averages": {
-    "games_played": 0,
-    "ppg": 0,
-    "rpg": 0,
-    "apg": 0,
-    "spg": 0,
-    "bpg": 0,
-    "mpg": 0,
-    "performance_index": 0
+    "games_played": 1,
+    "ppg": 10.0,
+    "rpg": 4.0,
+    "apg": 3.0,
+    "spg": 1.0,
+    "bpg": 0.0,
+    "mpg": 22.0,
+    "performance_index": 21.3
   },
   "latest_game": {
-    "competition": "",
-    "season": "",
-    "round": "No games registered yet",
-    "opponent": "",
-    "points": 0,
-    "rebounds": 0,
-    "assists": 0,
-    "steals": 0,
+    "competition": "Internal Test Competition",
+    "season": "2026/27",
+    "round": "Test Round",
+    "opponent": "Test Opponent",
+    "points": 10,
+    "rebounds": 4,
+    "assists": 3,
+    "steals": 1,
     "blocks": 0,
-    "minutes": 0,
-    "performance_index": 0
+    "minutes": 22,
+    "performance_index": 21.3
   },
-  "summary": "Pablo Mera é um atleta de Guard no Real Madrid. O perfil tem atualmente 0 jogo(s) registado(s) no Orangeball Dreams.",
-  "latest_game_summary": "Último jogo: No games registered yet vs  — 0 PTS, 0 REB, 0 AST.",
+  "summary": "Pablo Mera é um atleta de Guard no Real Madrid. O perfil tem atualmente 1 jogo(s) registado(s) no Orangeball Dreams.",
+  "latest_game_summary": "Último jogo: Test Round vs Test Opponent — 10 PTS, 4 REB, 3 AST.",
   "strengths": [
     "Perfil ainda com dados limitados. É necessário acompanhar mais jogos."
   ],
   "improvement_points": [
-    "Aumentar consistência ofensiva e volume de contribuição em pontos.",
-    "Melhorar impacto na criação de jogo e distribuição.",
-    "Aumentar presença no ressalto e envolvimento físico.",
-    "Conquistar maior estabilidade de minutos através de consistência competitiva."
+    "Manter consistência e transformar bons indicadores em regularidade ao longo da época."
   ],
   "classification": {
     "label": "Precisa de mais dados",
     "reason": "O atleta ainda tem poucos jogos registados para uma avaliação sólida."
   },
-  "recommendation": "Ainda não existem dados suficientes para uma recomendação sólida de scouting."
+  "recommendation": "Atleta com indicadores fortes. Deve ser acompanhado de perto para oportunidades competitivas superiores."
 }
