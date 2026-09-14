@@ -4,18 +4,26 @@ import { useEffect } from "react";
 
 export default function PwaRegister() {
   useEffect(() => {
-    if (process.env.NODE_ENV !== "production") {
-      return;
+    async function clearPwaCache() {
+      if ("serviceWorker" in navigator) {
+        const registrations = await navigator.serviceWorker.getRegistrations();
+
+        for (const registration of registrations) {
+          await registration.unregister();
+        }
+      }
+
+      if ("caches" in window) {
+        const cacheNames = await caches.keys();
+
+        for (const cacheName of cacheNames) {
+          await caches.delete(cacheName);
+        }
+      }
     }
 
-    if (!("serviceWorker" in navigator)) {
-      return;
-    }
-
-    window.addEventListener("load", () => {
-      navigator.serviceWorker.register("/sw.js").catch((error) => {
-        console.error("Service worker registration failed:", error);
-      });
+    clearPwaCache().catch(() => {
+      // Ignore cache cleanup errors
     });
   }, []);
 
