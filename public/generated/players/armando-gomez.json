@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "slug": "armando-gomez",
-  "name": "Armando Gómez",
+  "name": "Armando GÃ³mez",
   "club": "Real Madrid",
   "position": "Treinador",
   "nationality": "Espanhola",
@@ -9,7 +9,7 @@
   "birth_date": "",
   "height_cm": null,
   "league": "Endesa - Cadete",
-  "photo": "/images/players//treinadores/Armando.png",
+  "photo": "/images/players/treinadores/armando-gomez.png",
   "highlight_video": "",
   "status": "active",
   "featured": false,
@@ -20,7 +20,7 @@
   "agent_notes": "",
   "updated_at": "2026-08-13T10:38:38.317Z",
   "content_type": "player_profile",
-  "summary": "Armando Gómez has been added to Orangeball Dreams. Full performance data will appear once official game stats are registered.",
+  "summary": "Armando GÃ³mez has been added to Orangeball Dreams. Full performance data will appear once official game stats are registered.",
   "averages": {
     "games_played": 0,
     "ppg": 0,
@@ -47,7 +47,7 @@
   },
   "games": [],
   "news": [],
-  "generated_at": "2026-09-14T10:05:57.588898+00:00",
+  "generated_at": "2026-09-14T11:10:45.640382+00:00",
   "source": {
     "type": "ai-engine",
     "player_slug": "armando-gomez",

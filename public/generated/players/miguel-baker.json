@@ -10,7 +10,7 @@
   "birth_date": "",
   "height_cm": 200,
   "league": "Serie B Italy",
-  "photo": "/images/players/masculino/miguelbaker.PNG",
+  "photo": "/images/players/masculino/miguel-baker.png",
   "highlight_video": "",
   "status": "active",
   "featured": false,
@@ -48,7 +48,7 @@
   },
   "games": [],
   "news": [],
-  "generated_at": "2026-09-14T10:05:58.027533+00:00",
+  "generated_at": "2026-09-14T11:10:45.911365+00:00",
   "source": {
     "type": "ai-engine",
     "player_slug": "miguel-baker",

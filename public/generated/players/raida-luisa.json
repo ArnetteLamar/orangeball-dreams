@@ -10,7 +10,7 @@
   "birth_date": "",
   "height_cm": null,
   "league": "Liga betclic",
-  "photo": "/images/players/femenino/raida.PNG",
+  "photo": "/images/players/femenino/raida-luisa.png",
   "highlight_video": "",
   "status": "active",
   "featured": false,
@@ -48,7 +48,7 @@
   },
   "games": [],
   "news": [],
-  "generated_at": "2026-09-14T10:05:58.061188+00:00",
+  "generated_at": "2026-09-14T11:10:45.939591+00:00",
   "source": {
     "type": "ai-engine",
     "player_slug": "raida-luisa",
