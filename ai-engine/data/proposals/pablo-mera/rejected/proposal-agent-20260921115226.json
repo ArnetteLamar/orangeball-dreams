@@ -1,0 +1,27 @@
+{
+  "proposal_id": "proposal-agent-20260921115226",
+  "type": "add_game",
+  "source": "test-boxscore-do-not-approve",
+  "source_url": "https://example.com/test-boxscore",
+  "confidence": 0.99,
+  "status": "rejected",
+  "created_at": "2026-09-21T11:52:26.841562+00:00",
+  "notes": "Proposta de estatística criada a partir do Orangeball Scouting Agent.",
+  "proposed_data": {
+    "competition": "TEST Competition",
+    "season": "2026/27",
+    "round": "TEST Round",
+    "opponent": "TEST Opponent",
+    "points": 10.0,
+    "rebounds": 4.0,
+    "assists": 3.0,
+    "steals": 1.0,
+    "blocks": 0.0,
+    "minutes": 22.0
+  },
+  "audit": {
+    "created_by": "orangeball-scouting-agent-importer"
+  },
+  "reviewed_at": "2026-09-21T11:53:00.990302+00:00",
+  "reviewed_by": "arnette"
+}

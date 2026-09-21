@@ -1,0 +1,30 @@
+{
+  "proposals": [
+    {
+      "proposal_type": "stat_update",
+      "target": "player_profile",
+      "player_slug": "pablo-mera",
+      "source_id": "test-boxscore-do-not-approve",
+      "source_url": "https://example.com/test-boxscore",
+      "confidence": 0.99,
+      "data": {
+        "competition": "TEST Competition",
+        "season": "2026/27",
+        "round": "TEST Round",
+        "opponent": "TEST Opponent",
+        "points": 10,
+        "rebounds": 4,
+        "assists": 3,
+        "steals": 1,
+        "blocks": 0,
+        "minutes": 22
+      },
+      "evidence": {
+        "source_url": "https://example.com/test-boxscore",
+        "source_name": "TEST Source",
+        "source_date": "2026-09-21",
+        "why_relevant": "Technical test only. Do not approve."
+      }
+    }
+  ]
+}
