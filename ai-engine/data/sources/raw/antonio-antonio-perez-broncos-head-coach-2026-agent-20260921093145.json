@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0",
+  "source_id": "antonio-perez-broncos-head-coach-2026",
+  "player_slug": "antonio",
+  "collected_at": "2026-09-21T09:31:45.106Z",
+  "updated_at": "2026-09-21T09:31:45.106Z",
+  "status": "raw_ready",
+  "source_url": "https://www.broncos.mn/",
+  "confidence": 0.95,
+  "raw_data": {
+    "category": "Coaching",
+    "title": "Antonio Pérez confirmed as Head Coach of Broncos Basketball Club",
+    "summary": "Antonio Pérez Cainzos has been listed as Head Coach of Broncos Basketball Club, adding a new international chapter to his coaching career.",
+    "content": "Antonio Pérez Cainzos continues his international coaching journey as Head Coach of Broncos Basketball Club. The official club website lists him as part of the coaching staff, reinforcing his profile as an experienced coach with a career connected to player development, team leadership and international basketball environments.",
+    "published_at": "2026-09-21",
+    "source_name": "Broncos Basketball Club"
+  },
+  "agent": {
+    "agent_id": "orangeball-scouting-agent",
+    "proposal_type": "news_update",
+    "agent_notes": "Official Broncos Basketball Club website lists Antonio Pérez Cainzos as Head coach. Spanish version included below for editorial use: Antonio Pérez Cainzos ha sido confirmado como entrenador principal de Broncos Basketball Club, reforzando su perfil internacional dentro del baloncesto profesional."
+  },
+  "notes": "Raw source criado a partir de AI Output colado no Admin."
+}
