@@ -43,6 +43,27 @@
     "source": "Basketball Africa League / FIBA"
   },
   {
+    "id": "joana-soeiro-benfica-preseason-2026",
+    "date": "2026-09-03",
+    "homepage": true,
+    "category": {
+      "en": "Interview",
+      "es": "Entrevista"
+    },
+    "title": {
+      "en": "Joana Soeiro leads Benfica into the 2026/27 season",
+      "es": "Joana Soeiro lidera al Benfica hacia la temporada 2026/27"
+    },
+    "summary": {
+      "en": "Benfica captain Joana Soeiro discussed the responsibility of leading the three-time national champions and the process of building a renewed squad for the 2026/27 season.",
+      "es": "La capitana del Benfica, Joana Soeiro, habló sobre la responsabilidad de liderar a las tricampeonas nacionales y el proceso de construir un equipo renovado para la temporada 2026/27."
+    },
+    "image": "/images/news/joana-capita.jpg",
+    "player_slug": "joana-soeiro",
+    "href": "https://www.slbenfica.pt/pt-pt/agora/noticias/2026/09/02/basquetebol-feminino-benfica-arranque-dos-treinos-pre-epoca-2026-27",
+    "source": "SL Benfica"
+  },
+  {
     "id": "pablo-mera-real-madrid-debut",
     "date": "2026-08-30",
     "homepage": true,
