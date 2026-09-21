@@ -1,9 +1,9 @@
 # Relatório AI — Antonio
 
-Gerado em: 2026-09-21T09:32:11.924848+00:00
+Gerado em: 2026-09-21T09:38:55.962795+00:00
 
 ## Resumo
-Antonio é um atleta de Treinador no Free Agent. O perfil tem atualmente 0 jogo(s) registado(s) no Orangeball Dreams.
+Antonio é um atleta de Treinador no Broncos. O perfil tem atualmente 0 jogo(s) registado(s) no Orangeball Dreams.
 
 ## Médias
 - Jogos registados: 0

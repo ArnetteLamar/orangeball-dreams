@@ -1,0 +1,37 @@
+{
+  "proposal_type": "news_update",
+  "target": "homepage",
+  "source_id": "antonio-perez-broncos-head-coach-2026",
+  "source_url": "https://www.broncos.mn/",
+  "confidence": 0.95,
+  "data": {
+    "id": "antonio-perez-broncos-head-coach-2026",
+    "date": "2026-09-21",
+    "homepage": true,
+    "category": {
+      "en": "Coaching Move",
+      "es": "Movimiento de entrenador"
+    },
+    "title": {
+      "en": "Antonio Pérez confirmed as Head Coach of Broncos Basketball Club",
+      "es": "Antonio Pérez confirmado como entrenador principal de Broncos Basketball Club"
+    },
+    "summary": {
+      "en": "Antonio Pérez Cainzos begins a new international chapter as Head Coach of Broncos Basketball Club, adding further experience to a coaching career built across high-performance and international basketball environments.",
+      "es": "Antonio Pérez Cainzos inicia una nueva etapa internacional como entrenador principal de Broncos Basketball Club, sumando experiencia a una trayectoria desarrollada en contextos de alto rendimiento y baloncesto internacional."
+    },
+    "image": "",
+    "player_slug": "antonio-perez",
+    "href": "/{locale}/athletes/antonio-perez",
+    "source": "Broncos Basketball Club"
+  },
+  "evidence": {
+    "source_url": "https://www.broncos.mn/",
+    "source_name": "Broncos Basketball Club",
+    "source_date": "2026-09-21",
+    "why_relevant": "The official Broncos Basketball Club website lists Antonio Pérez Cainzos as Head coach, making this a relevant coaching update for Orangeball Dreams."
+  },
+  "status": "approved",
+  "created_at": "2026-09-21T09:39:32.311Z",
+  "approved_at": "2026-09-21T09:39:43.108Z"
+}

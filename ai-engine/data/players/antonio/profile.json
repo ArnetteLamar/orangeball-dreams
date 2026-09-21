@@ -2,13 +2,13 @@
   "schema_version": "1.0",
   "slug": "antonio",
   "name": "Antonio",
-  "club": "Free Agent",
+  "club": "Broncos",
   "position": "Treinador",
   "nationality": "Espanhola",
-  "gender": "Masculino",
+  "gender": "male",
   "birth_date": "",
   "height_cm": null,
-  "league": "Free Agent",
+  "league": "Mongolian Basketball League (MBL)",
   "photo": "/images/players/treinadores/AntonioP.png",
   "highlight_video": "",
   "status": "active",
@@ -18,5 +18,5 @@
   "instagram": "",
   "youtube": "",
   "agent_notes": "",
-  "updated_at": "2026-08-13T10:39:14.773Z"
+  "updated_at": "2026-09-21T09:34:19.270Z"
 }

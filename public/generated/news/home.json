@@ -1,5 +1,27 @@
 ﻿[
   {
+    "id": "antonio-perez-broncos-head-coach-2026",
+    "date": "2026-09-21",
+    "homepage": true,
+    "category": {
+      "en": "Coaching Move",
+      "es": "Movimiento de entrenador"
+    },
+    "title": {
+      "en": "Antonio Pérez confirmed as Head Coach of Broncos Basketball Club",
+      "es": "Antonio Pérez confirmado como entrenador principal de Broncos Basketball Club"
+    },
+    "summary": {
+      "en": "Antonio Pérez Cainzos begins a new international chapter as Head Coach of Broncos Basketball Club, adding further experience to a coaching career built across high-performance and international basketball environments.",
+      "es": "Antonio Pérez Cainzos inicia una nueva etapa internacional como entrenador principal de Broncos Basketball Club, sumando experiencia a una trayectoria desarrollada en contextos de alto rendimiento y baloncesto internacional."
+    },
+    "image": "/images/news/antonio-broncos.png",
+    "player_slug": "antonio-perez",
+    "href": "https://www.broncos.mn/",
+    "source_url": "https://www.broncos.mn/",
+    "source": "Orange Ball Dreams"
+  },
+  {
     "id": "cleusio-castro-angola-petro-bal-spotlight-2026",
     "date": "2026-09-11",
     "homepage": true,
